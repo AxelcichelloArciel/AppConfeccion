@@ -1,13 +1,13 @@
 from .Ventana import Ventana
 import tkinter as tk
 from tkinter import messagebox
+from auxiliares import exportar_a_pdf
 import sys
 import os
 
 # Agregar la ruta del directorio principal al sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
 
-from auxiliares import exportar_a_pdf
 
 class VentanaDatosProcesados(Ventana):
     def __init__(self, numero_lote, productos):

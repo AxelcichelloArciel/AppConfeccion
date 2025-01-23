@@ -496,5 +496,17 @@
         "nombre": "Bata Rosa XXL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420542"
+    },
+    {
+        "sku": "123456789123",
+        "nombre": "Toalla de prueba",
+        "peso": "111",
+        "codigo_barra": "1234567891234"
+    },
+    {
+        "sku": "123456789111",
+        "nombre": "Toallon de prueba",
+        "peso": "222",
+        "codigo_barra": "123456789122"
     }
 ]
