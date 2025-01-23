@@ -361,19 +361,19 @@
     },
     {
         "codigo": "487001000000",
-        "nombre": "Alfombra de baño Blanco",
+        "nombre": "Alfombra de ba\u00c3\u00b1o Blanco",
         "peso": "700 gr.",
         "codigo_barra": "7798426420160"
     },
     {
         "codigo": "487002000000",
-        "nombre": "Alfombra de baño Gris Oscuro",
+        "nombre": "Alfombra de ba\u00c3\u00b1o Gris Oscuro",
         "peso": "700 gr.",
         "codigo_barra": ""
     },
     {
         "codigo": "487002000000",
-        "nombre": "Alfombra de baño Gris Claro",
+        "nombre": "Alfombra de ba\u00c3\u00b1o Gris Claro",
         "peso": "700 gr.",
         "codigo_barra": ""
     },
@@ -498,15 +498,15 @@
         "codigo_barra": "7798426420542"
     },
     {
-        "sku": "123456789123",
-        "nombre": "Toalla de prueba",
-        "peso": "111",
+        "codigo": "123456789123",
+        "nombre": "Toallon de prueba",
+        "peso": "155 gr.",
         "codigo_barra": "1234567891234"
     },
     {
-        "sku": "123456789111",
+        "codigo": "123456789123",
         "nombre": "Toallon de prueba",
-        "peso": "222",
-        "codigo_barra": "123456789122"
+        "peso": "155 gr.",
+        "codigo_barra": "1234567891234"
     }
 ]

@@ -75,7 +75,7 @@ class VentanaAgregarArticulo(Ventana):
             return
 
         nuevo_articulo = {
-            "sku": sku,
+            "codigo": sku,
             "nombre": nombre,
             "peso": f"{peso} gr.",
             "codigo_barra": codigo_barras
