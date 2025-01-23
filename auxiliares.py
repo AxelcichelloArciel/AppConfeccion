@@ -4,3 +4,6 @@ def obtener_res(root):
     h = root.winfo_screenheight()
 
     return f"{w}x{h}"
+
+
+

@@ -85,8 +85,7 @@ class VentanaCargarLote(Ventana):
                 print(f"Codigo de barras: {numero} no se encontrado en la nomina")
 
         # Abrir la nueva ventana con los datos procesados
-        self.root.withdraw()
         ventana_datos_procesados = VentanaDatosProcesados(numero_lote, productos)
+        self.root.destroy()  # Destruir la ventana principal
         ventana_datos_procesados.mostrar()
         self.root.quit()  # Detener el bucle principal de la ventana principal
-        self.root.destroy()  # Destruir la ventana principal
