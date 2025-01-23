@@ -2,12 +2,15 @@ from .Ventana import Ventana
 from ..Producto import Producto
 from .VentanaDatosProcesados import VentanaDatosProcesados
 import tkinter as tk
+from tkinter import messagebox
 from collections import Counter
 import json
 
 class VentanaCargarLote(Ventana):
     def __init__(self):
         super().__init__(title="Cargar Lote")
+        self.crear_widgets()
+        self.cargar_datos_nomina()
 
     def crear_widgets(self):
         frame = tk.Frame(self.root)
@@ -17,19 +20,19 @@ class VentanaCargarLote(Ventana):
         label_apellido.pack(pady=10)
 
         self.entry_apellido = tk.Entry(frame, width=50, font=("Arial", 16))
-        self.entry_apellido.pack(pady=10, ipady=10)  # ipady aumenta la altura del campo de entrada
+        self.entry_apellido.pack(pady=10, ipady=10)
+        self.entry_apellido.bind("<KeyRelease>", self.validar_entrada_apellido)
 
         label_lote = tk.Label(frame, text="Ingrese el número de lote:", font=("Arial", 12))
         label_lote.pack(pady=10)
 
         self.entry_lote = tk.Entry(frame, width=50, font=("Arial", 16))
-        self.entry_lote.pack(pady=10, ipady=10)  # ipady aumenta la altura del campo de entrada
-        self.entry_lote.bind("<KeyRelease>", self.validar_entrada_lote) # evento para validar el digito ingresado
+        self.entry_lote.pack(pady=10, ipady=10)
+        self.entry_lote.bind("<KeyRelease>", self.validar_entrada_lote)
 
         label = tk.Label(frame, text="Ingrese los números de SKU (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
         label.pack(pady=10)
 
-        # Crear un widget Text con una barra de desplazamiento vertical
         self.text = tk.Text(frame, width=50, height=15, font=("Arial", 16), wrap=tk.WORD)
         self.text.pack(pady=10)
 
@@ -40,9 +43,18 @@ class VentanaCargarLote(Ventana):
         btn_procesar = tk.Button(frame, text="Procesar lote", command=self.procesar_datos, width=20, height=3, font=("Arial", 16))
         btn_procesar.pack(pady=10)
 
-        # Vincular el evento de teclado para formatear automáticamente cada 13 dígitos y validar la entrada
-        self.text.bind("<KeyRelease>", self.formatear_y_validar_texto) # evento para formatear la cadena de entrada
+        self.text.bind("<KeyRelease>", self.formatear_y_validar_texto)
 
+    def cargar_datos_nomina(self):
+        with open('nomina.json', 'r') as file:
+            self.datos_nomina = json.load(file)
+
+    def validar_entrada_apellido(self, event):
+        contenido = self.entry_apellido.get()
+        if not contenido.isalpha():
+            self.entry_apellido.delete(0, tk.END)
+            self.entry_apellido.insert(0, ''.join(filter(str.isalpha, contenido)))
+    
     def validar_entrada_lote(self, event):
         contenido = self.entry_lote.get() # obtiene el contenido del campo de entrada
         if not contenido.isdigit(): # valida si el contenido es un digito
@@ -58,7 +70,28 @@ class VentanaCargarLote(Ventana):
         self.text.delete("1.0", tk.END) # borra el contenido del widget Text
         self.text.insert("1.0", formateado.strip()) # inserta el contenido formateado en el widget Text
 
+    
+    def validar_codigos_sku(self):
+        skus = self.text.get("1.0", tk.END).strip().split()
+        codigos_nomina = {producto['codigo_barra'] for producto in self.datos_nomina} 
+        for sku in skus:
+            if sku not in codigos_nomina:
+                return False, sku
+        return True, None
+
     def procesar_datos(self):
+
+        valido, sku_invalido = self.validar_codigos_sku()
+        if not valido:
+            messagebox.showerror("Error", f"El código SKU {sku_invalido} no es válido.")
+            return
+
+        apellido = self.entry_apellido.get().strip() # Obtiene el apellido ingresado
+        if not apellido: # valida si el apellido está vacío
+            print("Error, el apellido no puede estar vacío") # imprime un mensaje de error
+            return
+
+
         numero_lote = self.entry_lote.get().strip() # Obtiene el número de lote ingresado
         if not numero_lote: # valida si el número de lote está vacío
             print("Error, el número de lote no puede estar vacío") # imprime un mensaje de error
@@ -91,7 +124,7 @@ class VentanaCargarLote(Ventana):
                 print(f"Codigo de barras: {numero} no se encontrado en la nomina")
 
         # Abrir la nueva ventana con los datos procesados
-        ventana_datos_procesados = VentanaDatosProcesados(numero_lote, productos)
+        ventana_datos_procesados = VentanaDatosProcesados(numero_lote, productos, apellido)
         self.root.destroy()  # Destruir la ventana principal
         ventana_datos_procesados.mostrar()
         self.root.quit()  # Detener el bucle principal de la ventana principal

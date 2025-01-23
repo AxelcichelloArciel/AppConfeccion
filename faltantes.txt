@@ -1,0 +1,4 @@
+*Preguntar si pueden haber dos lotes iguales.
+*Edicion de articulos
+*eliminacion de articulos
+*Ver si un numero de lote puede cambiar o no

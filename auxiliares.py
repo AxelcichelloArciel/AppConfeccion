@@ -13,7 +13,7 @@ def obtener_res(root):
 
     return f"{w}x{h}"
 
-def exportar_a_pdf(numero_lote, productos):
+def exportar_a_pdf(numero_lote, productos, apellido):
     # Crear un DataFrame con los datos de los productos
     data = []
     for producto in productos:
@@ -42,6 +42,7 @@ def exportar_a_pdf(numero_lote, productos):
     # Agregar el número de lote y la fecha actual al PDF
     styles = getSampleStyleSheet()
     fecha_actual = datetime.now().strftime("%Y-%m-%d")
+    elements.append(Paragraph(f"Apellido del usuario: {apellido}", styles['Title']))
     elements.append(Paragraph(f"Número de Lote: {numero_lote}", styles['Title']))
     elements.append(Paragraph(f"Fecha de Recuento: {fecha_actual}", styles['Title']))
     elements.append(Spacer(1, 12))
