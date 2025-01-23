@@ -13,6 +13,12 @@ class VentanaCargarLote(Ventana):
         frame = tk.Frame(self.root)
         frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
+        label_apellido = tk.Label(frame, text="Ingrese su apellido:", font=("Arial", 12))
+        label_apellido.pack(pady=10)
+
+        self.entry_apellido = tk.Entry(frame, width=50, font=("Arial", 16))
+        self.entry_apellido.pack(pady=10, ipady=10)  # ipady aumenta la altura del campo de entrada
+
         label_lote = tk.Label(frame, text="Ingrese el número de lote:", font=("Arial", 12))
         label_lote.pack(pady=10)
 
