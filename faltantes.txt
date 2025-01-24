@@ -4,3 +4,4 @@
 *Edicion de articulos
 *eliminacion de articulos
 *Ver si un numero de lote puede cambiar o no
+*Formatear la nueva nomina
