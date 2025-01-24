@@ -3,720 +3,840 @@
         "codigo": "383008469050",
         "nombre": "Repasador Rayas Azul",
         "peso": "",
-        "codigo_barra": "2800005795615"
+        "codigo_barra": "2800005795615",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383008201050",
         "nombre": "Repasador Rayas Crema",
         "peso": "",
-        "codigo_barra": "2800005795622"
+        "codigo_barra": "2800005795622",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383008707050",
         "nombre": "Repasador Rayas Gris",
         "peso": "",
-        "codigo_barra": "2800005795592"
+        "codigo_barra": "2800005795592",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383008772050",
         "nombre": "Repasador Rayas Gris O",
         "peso": "",
-        "codigo_barra": "2800005795608"
+        "codigo_barra": "2800005795608",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009469050",
         "nombre": "Repasador Toalla Azul",
         "peso": "",
-        "codigo_barra": "2800005795653"
+        "codigo_barra": "2800005795653",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009603050",
         "nombre": "Repasador Toalla Beige",
         "peso": "",
-        "codigo_barra": "2800005795660"
+        "codigo_barra": "2800005795660",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009772050",
         "nombre": "Repasador Toalla Gris",
         "peso": "",
-        "codigo_barra": "2800005795639"
+        "codigo_barra": "2800005795639",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009707050",
         "nombre": "Repasador Toalla Gris O",
         "peso": "",
-        "codigo_barra": "2800005795646"
+        "codigo_barra": "2800005795646",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383001106050",
         "nombre": "Repasador Toall Crud",
         "peso": "",
-        "codigo_barra": "2800005800432"
+        "codigo_barra": "2800005800432",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383001772050",
         "nombre": "Repasador Toall Gris",
         "peso": "",
-        "codigo_barra": "2800005800449"
+        "codigo_barra": "2800005800449",
+        "tipo": "Repasador"
     },
     {
         "codigo": "284003606050",
         "nombre": "Toalla Panal Guard Beige",
         "peso": "420GR",
-        "codigo_barra": "2800005795684"
+        "codigo_barra": "2800005795684",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284003100050",
         "nombre": "Toalla Panal Guard Blanca",
         "peso": "420GR",
-        "codigo_barra": "2800005795677"
+        "codigo_barra": "2800005795677",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284003707050",
         "nombre": "Toalla Panal Guard Gris",
         "peso": "420GR",
-        "codigo_barra": "2800005795707"
+        "codigo_barra": "2800005795707",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284003772050",
         "nombre": "Toalla Panal Guard Gris O",
         "peso": "420GR",
-        "codigo_barra": "2800005795691"
+        "codigo_barra": "2800005795691",
+        "tipo": "Toalla"
     },
     {
         "codigo": "184003603050",
         "nombre": "Toallon Panal Guard Beige",
         "peso": "420GR",
-        "codigo_barra": "2800005795721"
+        "codigo_barra": "2800005795721",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184003100050",
         "nombre": "Toallon Panal Guard Blanca",
         "peso": "420GR",
-        "codigo_barra": "2800005795714"
+        "codigo_barra": "2800005795714",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184003707050",
         "nombre": "Toallon Panal Guard Gris",
         "peso": "420GR",
-        "codigo_barra": "2800005795509"
+        "codigo_barra": "2800005795509",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184003772050",
         "nombre": "Toallon Panal Guard Gris O",
         "peso": "420GR",
-        "codigo_barra": "2800005795493"
+        "codigo_barra": "2800005795493",
+        "tipo": "Toallon"
     },
     {
         "codigo": "284007469050",
         "nombre": "Toalla Sweet Azul",
         "peso": "450GR",
-        "codigo_barra": "2800005795547"
+        "codigo_barra": "2800005795547",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284007100050",
         "nombre": "Toalla Sweet Blanca",
         "peso": "450GR",
-        "codigo_barra": "2800005795523"
+        "codigo_barra": "2800005795523",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284007707050",
         "nombre": "Toalla Sweet Gris",
         "peso": "450GR",
-        "codigo_barra": "2800005495530"
+        "codigo_barra": "2800005495530",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284007581050",
         "nombre": "Toalla Sweet Petroleo",
         "peso": "450GR",
-        "codigo_barra": "2800005795516"
+        "codigo_barra": "2800005795516",
+        "tipo": "Toalla"
     },
     {
         "codigo": "184007469050",
         "nombre": "Toallon Sweet Azul",
         "peso": "450GR",
-        "codigo_barra": "2800005795585"
+        "codigo_barra": "2800005795585",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184007100050",
         "nombre": "Toallon Sweet Blanca",
         "peso": "450GR",
-        "codigo_barra": "2800005795554"
+        "codigo_barra": "2800005795554",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184007707050",
         "nombre": "Toallon Sweet Gris",
         "peso": "450GR",
-        "codigo_barra": "2800005795561"
+        "codigo_barra": "2800005795561",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184007581050",
         "nombre": "Toallon Sweet Petroleo",
         "peso": "450GR",
-        "codigo_barra": "2800005795578"
+        "codigo_barra": "2800005795578",
+        "tipo": "Toallon"
     },
     {
         "codigo": "487001707050",
         "nombre": "Alfombra Baño Gris Claro",
         "peso": "",
-        "codigo_barra": "2800005841411"
+        "codigo_barra": "2800005841411",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001772050",
         "nombre": "Alfombra Baño Gris Oscuro",
         "peso": "",
-        "codigo_barra": "2800005841428"
+        "codigo_barra": "2800005841428",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001603050",
         "nombre": "Alfombra Baño Beige",
         "peso": "",
-        "codigo_barra": "2800005919738"
+        "codigo_barra": "2800005919738",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001581050",
         "nombre": "Alfombra Baño Petroleo",
         "peso": "",
-        "codigo_barra": "2800005919745"
+        "codigo_barra": "2800005919745",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001469050",
         "nombre": "Alfombra Baño Azul",
         "peso": "",
-        "codigo_barra": "2800005919752"
+        "codigo_barra": "2800005919752",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "184014603050",
         "nombre": "Toallon Playero Beige/Bco",
         "peso": "",
-        "codigo_barra": "2800005904475"
+        "codigo_barra": "2800005904475",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184018772050",
         "nombre": "Toallon Playero Gris/Beige",
         "peso": "",
-        "codigo_barra": "2800005904482"
+        "codigo_barra": "2800005904482",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184016143050",
         "nombre": "Toallon Playero Lima/Hueso",
         "peso": "",
-        "codigo_barra": "2800005904499"
+        "codigo_barra": "2800005904499",
+        "tipo": "Toallon"
     },
     {
         "codigo": "1840155840500",
         "nombre": "Toallon Playero Verde/Hueso",
         "peso": "",
-        "codigo_barra": "2800005904505"
+        "codigo_barra": "2800005904505",
+        "tipo": "Toallon"
     },
     {
         "codigo": "383010100050",
         "nombre": "Repasador Crudo Rayas Rojo",
         "peso": "",
-        "codigo_barra": "2800005886467"
+        "codigo_barra": "2800005886467",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383011100050",
         "nombre": "Repasador Crudo Rayas Verde",
         "peso": "",
-        "codigo_barra": "2800005886528"
+        "codigo_barra": "2800005886528",
+        "tipo": "Repasador"
     },
     {
         "codigo": "184011538050",
         "nombre": "Toallon Palermo Verde",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420153"
+        "codigo_barra": "7798426420153",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184011469050",
         "nombre": "Toallon Palermo Azul",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420146"
+        "codigo_barra": "7798426420146",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184011721050",
         "nombre": "Toallon Palermo Gris",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420139"
+        "codigo_barra": "7798426420139",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184011100050",
         "nombre": "Toallon Palermo Blanco",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420238"
+        "codigo_barra": "7798426420238",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184011106050",
         "nombre": "Toallon Palermo Nature",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420245"
+        "codigo_barra": "7798426420245",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184011221050",
         "nombre": "Toallon Palermo Rosa",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420252"
+        "codigo_barra": "7798426420252",
+        "tipo": "Toallon"
     },
     {
         "codigo": "284011721050",
         "nombre": "Toalla Palermo Gris",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420122"
+        "codigo_barra": "7798426420122",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284011469050",
         "nombre": "Toalla Palermo Azul",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420115"
+        "codigo_barra": "7798426420115",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284011538050",
         "nombre": "Toalla Palermo Verde",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420108"
+        "codigo_barra": "7798426420108",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284011100050",
         "nombre": "Toalla Palermo Blanco",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420276"
+        "codigo_barra": "7798426420276",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284011106050",
         "nombre": "Toalla Palermo Nature",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420283"
+        "codigo_barra": "7798426420283",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284011221050",
         "nombre": "Toalla Palermo Rosa",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420269"
+        "codigo_barra": "7798426420269",
+        "tipo": "Toalla"
     },
     {
         "codigo": "183010324050",
         "nombre": "Toallon Ibera Morado",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420092"
+        "codigo_barra": "7798426420092",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183010204050",
         "nombre": "Toallon Ibera Rosa",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420085"
+        "codigo_barra": "7798426420085",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183010416050",
         "nombre": "Toallon Ibera Aero",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420078"
+        "codigo_barra": "7798426420078",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183010100050",
         "nombre": "Toallon Ibera Blanco",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420207"
+        "codigo_barra": "7798426420207",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183010106050",
         "nombre": "Toallon Ibera Nature",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420214"
+        "codigo_barra": "7798426420214",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183010713050",
         "nombre": "Toallon Ibera Gris",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420221"
+        "codigo_barra": "7798426420221",
+        "tipo": "Toallon"
     },
     {
         "codigo": "283010416050",
         "nombre": "Toalla Ibera Aero",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420061"
+        "codigo_barra": "7798426420061",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283010324050",
         "nombre": "Toalla Ibera Morado",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420054"
+        "codigo_barra": "7798426420054",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283010204050",
         "nombre": "Toalla Ibera Rosa",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420047"
+        "codigo_barra": "7798426420047",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283010100050",
         "nombre": "Toalla Ibera Blanco",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420177"
+        "codigo_barra": "7798426420177",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283010106050",
         "nombre": "Toalla Ibera Nature",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420184"
+        "codigo_barra": "7798426420184",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283010713050",
         "nombre": "Toalla Ibera Gris",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420191"
+        "codigo_barra": "7798426420191",
+        "tipo": "Toalla"
     },
     {
         "codigo": "184012100049",
         "nombre": "Toallon Lacar Blanco",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420351"
+        "codigo_barra": "7798426420351",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184012106050",
         "nombre": "Toallon Lacar Nature",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420368"
+        "codigo_barra": "7798426420368",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184012603050",
         "nombre": "Toallon Lacar Beige",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420375"
+        "codigo_barra": "7798426420375",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184012581050",
         "nombre": "Toallon Lacar Petroleo",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420382"
+        "codigo_barra": "7798426420382",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184012264050",
         "nombre": "Toallon Lacar Brick",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420399"
+        "codigo_barra": "7798426420399",
+        "tipo": "Toallon"
     },
     {
         "codigo": "184012772050",
         "nombre": "Toallon Lacar Gris Topo",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420405"
+        "codigo_barra": "7798426420405",
+        "tipo": "Toallon"
     },
     {
         "codigo": "284012100050",
         "nombre": "Toalla Lacar Blanco",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420412"
+        "codigo_barra": "7798426420412",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284012106050",
         "nombre": "Toalla Lacar Nature",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420429"
+        "codigo_barra": "7798426420429",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284012603050",
         "nombre": "Toalla Lacar Beige",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420436"
+        "codigo_barra": "7798426420436",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284012581050",
         "nombre": "Toalla Lacar Petroleo",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420443"
+        "codigo_barra": "7798426420443",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284012264050",
         "nombre": "Toalla Lacar Brick",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420450"
+        "codigo_barra": "7798426420450",
+        "tipo": "Toalla"
     },
     {
         "codigo": "284012772050",
         "nombre": "Toalla Lacar Gris Topo",
         "peso": "420 gr.",
-        "codigo_barra": "7798426420467"
+        "codigo_barra": "7798426420467",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011234050",
         "nombre": "Toalla Alumine Rosa Chicle 234",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420702"
+        "codigo_barra": "7798426420702",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011349050",
         "nombre": "Toalla Alumine Orquidea 349",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420719"
+        "codigo_barra": "7798426420719",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011527050",
         "nombre": "Toalla Alumine Esmeralda 527",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420726"
+        "codigo_barra": "7798426420726",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011423050",
         "nombre": "Toalla Alumine Azul Acero 423",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420733"
+        "codigo_barra": "7798426420733",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011237050",
         "nombre": "Toalla Alumine Naranja 237",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420740"
+        "codigo_barra": "7798426420740",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011100050",
         "nombre": "Toalla Alumine Blanco 100",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420757"
+        "codigo_barra": "7798426420757",
+        "tipo": "Toalla"
     },
     {
         "codigo": "283011143050",
         "nombre": "Toalla Alumine Lima 143",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420849"
+        "codigo_barra": "7798426420849",
+        "tipo": "Toalla"
     },
     {
         "codigo": "183011234050",
         "nombre": "Toallon Alumine Rosa Chicle 234",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420771"
+        "codigo_barra": "7798426420771",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011143050",
         "nombre": "Toallon Alumine Lima 143",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420832"
+        "codigo_barra": "7798426420832",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011349050",
         "nombre": "Toallon Alumine Orquidea 349",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420788"
+        "codigo_barra": "7798426420788",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011527050",
         "nombre": "Toallon Alumine Esmeralda 527",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420795"
+        "codigo_barra": "7798426420795",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011423050",
         "nombre": "Toallon Alumine Aero 423",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420801"
+        "codigo_barra": "7798426420801",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011237050",
         "nombre": "Toallon Alumine Naranja 237",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420818"
+        "codigo_barra": "7798426420818",
+        "tipo": "Toallon"
     },
     {
         "codigo": "183011100050",
         "nombre": "Toallon Alumine Blanco 100",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420764"
+        "codigo_barra": "7798426420764",
+        "tipo": "Toallon"
     },
     {
         "codigo": "383001707050",
         "nombre": "Repasador Lino con Flecos Gris",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420290"
+        "codigo_barra": "7798426420290",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383001202050",
         "nombre": "Repasador Lino con Flecos Rosado",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420306"
+        "codigo_barra": "7798426420306",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383001608050",
         "nombre": "Repasador Lino con Flecos Camel",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420313"
+        "codigo_barra": "7798426420313",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383001537050",
         "nombre": "Repasador Lino con Flecos Verde Claro",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420337"
+        "codigo_barra": "7798426420337",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009100050",
         "nombre": "Repasador Canela Blanco",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420641"
+        "codigo_barra": "7798426420641",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009721050",
         "nombre": "Repasador Canela Gris",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420658"
+        "codigo_barra": "7798426420658",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009466050",
         "nombre": "Repasador Canela Azulino",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420665"
+        "codigo_barra": "7798426420665",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009581050",
         "nombre": "Repasador Canela Petroleo",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420672"
+        "codigo_barra": "7798426420672",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009368050",
         "nombre": "Repasador Canela Lila",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420689"
+        "codigo_barra": "7798426420689",
+        "tipo": "Repasador"
     },
     {
         "codigo": "383009216050",
         "nombre": "Repasador Canela Rosa Viejo",
         "peso": "360 gr.",
-        "codigo_barra": "7798426420696"
+        "codigo_barra": "7798426420696",
+        "tipo": "Repasador"
     },
     {
         "codigo": "487001100050",
         "nombre": "Alfombra de Baño Blanco",
         "peso": "700 gr.",
-        "codigo_barra": "7798426420160"
+        "codigo_barra": "7798426420160",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001772050",
         "nombre": "Alfombra de Baño Gris Oscuro",
         "peso": "700 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "487001707050",
         "nombre": "Alfombra de Baño Gris Claro",
         "peso": "700 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Alfombra"
     },
     {
         "codigo": "584001100050",
         "nombre": "Tela Rizo Blanca",
         "peso": "400 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Tela"
     },
     {
         "codigo": "584001204050",
         "nombre": "Tela Rizo Rosa",
         "peso": "400 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Tela"
     },
     {
         "codigo": "584001721050",
         "nombre": "Tela Rizo Gris",
         "peso": "400 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Tela"
     },
     {
         "codigo": "584001106050",
         "nombre": "Tela Rizo Nature",
         "peso": "400 gr.",
-        "codigo_barra": ""
+        "codigo_barra": "",
+        "tipo": "Tela"
     },
     {
         "codigo": "687001100010",
         "nombre": "Bata Blanca M",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420474"
+        "codigo_barra": "7798426420474",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001100020",
         "nombre": "Bata Blanca L",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420481"
+        "codigo_barra": "7798426420481",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001100030",
         "nombre": "Bata Blanca XL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420498"
+        "codigo_barra": "7798426420498",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001100040",
         "nombre": "Bata Blanca XXL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420504"
+        "codigo_barra": "7798426420504",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001721010",
         "nombre": "Bata Gris M",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420559"
+        "codigo_barra": "7798426420559",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001721020",
         "nombre": "Bata Gris L",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420566"
+        "codigo_barra": "7798426420566",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001721030",
         "nombre": "Bata Gris XL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420573"
+        "codigo_barra": "7798426420573",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001721040",
         "nombre": "Bata Gris XXL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420580"
+        "codigo_barra": "7798426420580",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001106010",
         "nombre": "Bata Nature M",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420597"
+        "codigo_barra": "7798426420597",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001106020",
         "nombre": "Bata Nature L",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420603"
+        "codigo_barra": "7798426420603",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001106030",
         "nombre": "Bata Nature XL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420610"
+        "codigo_barra": "7798426420610",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001106040",
         "nombre": "Bata Nature XXL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420627"
+        "codigo_barra": "7798426420627",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001204010",
         "nombre": "Bata Rosa M",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420511"
+        "codigo_barra": "7798426420511",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001204020",
         "nombre": "Bata Rosa L",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420528"
+        "codigo_barra": "7798426420528",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001204030",
         "nombre": "Bata Rosa XL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420535"
+        "codigo_barra": "7798426420535",
+        "tipo": "Bata"
     },
     {
         "codigo": "687001204040",
         "nombre": "Bata Rosa XXL",
         "peso": "600 gr.",
-        "codigo_barra": "7798426420542"
+        "codigo_barra": "7798426420542",
+        "tipo": "Bata"
     }
 ]

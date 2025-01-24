@@ -30,18 +30,29 @@ class VentanaCargarLote(Ventana):
         self.entry_lote.pack(pady=10, ipady=10)
         self.entry_lote.bind("<KeyRelease>", self.validar_entrada_lote)
 
-        label = tk.Label(frame, text="Ingrese los codigos de barra (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
+        label = tk.Label(frame, text="Ingrese los números de SKU (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
         label.pack(pady=10)
 
-        self.text = tk.Text(frame, width=50, height=15, font=("Arial", 16), wrap=tk.WORD)
-        self.text.pack(pady=10)
+        # Crear un Frame para el Text y la Scrollbar
+        text_frame = tk.Frame(frame)
+        text_frame.pack(pady=10)
 
-        scrollbar_y = tk.Scrollbar(frame, orient=tk.VERTICAL, command=self.text.yview)
+        self.text = tk.Text(text_frame, width=50, height=15, font=("Arial", 16), wrap=tk.WORD)
+        self.text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        scrollbar_y = tk.Scrollbar(text_frame, orient=tk.VERTICAL, command=self.text.yview)
         scrollbar_y.pack(side=tk.RIGHT, fill=tk.Y)
         self.text.config(yscrollcommand=scrollbar_y.set)
 
-        btn_procesar = tk.Button(frame, text="Procesar lote", command=self.procesar_datos, width=20, height=3, font=("Arial", 16))
-        btn_procesar.pack(pady=10)
+        # Crear un Frame para los botones
+        btn_frame = tk.Frame(frame)
+        btn_frame.pack(pady=10)
+
+        btn_procesar = tk.Button(btn_frame, text="Procesar lote", command=self.procesar_datos, width=20, height=3, font=("Arial", 16))
+        btn_procesar.pack(side=tk.LEFT, padx=5)
+
+        btn_volver = tk.Button(btn_frame, text="Volver", command=self.volver_atras, width=20, height=3, font=("Arial", 16))
+        btn_volver.pack(side=tk.LEFT, padx=5)
 
         self.text.bind("<KeyRelease>", self.formatear_y_validar_texto)
 
@@ -79,9 +90,9 @@ class VentanaCargarLote(Ventana):
         return True, None
 
     def procesar_datos(self):
-        # Validar que el campo de codgios de barra no esté vacío
-        if not self.text.get("1.0", tk.END).strip():  # Si el campo de texto está vacío
-            messagebox.showerror("Error", "Debe ingresar al menos un SKU.")  # Mostrar mensaje de error
+        # Validar que el campo de SKU no esté vacío
+        if not self.text.get("1.0", tk.END).strip():
+            messagebox.showerror("Error", "Debe ingresar al menos un codigo de barras.")
             return
 
         valido, sku_invalido = self.validar_codigos_sku()
@@ -127,3 +138,12 @@ class VentanaCargarLote(Ventana):
         self.root.destroy()
         ventana_datos_procesados.mostrar()
         self.root.quit()
+
+    def volver_atras(self):
+        from .VentanaMenuPrincipal import VentanaMenuPrincipal
+
+        ventana_menu_principal = VentanaMenuPrincipal()
+        self.root.destroy()  # Cierra la ventana actual
+        ventana_menu_principal.mostrar()
+        self.root.quit()
+

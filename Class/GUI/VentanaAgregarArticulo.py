@@ -48,13 +48,13 @@ class VentanaAgregarArticulo(Ventana):
         btn_volver_menu.pack(side=tk.LEFT, padx=5)
 
     def validar_sku(self, entrada):
-        return entrada.isdigit() and len(entrada) <= 12
+        return entrada.isdigit() and len(entrada) <= 12 or entrada == ""
 
     def validar_peso(self, entrada):
-        return entrada.isdigit()
+        return entrada.isdigit() or entrada == ""
 
     def validar_codigo_barras(self, entrada):
-        return entrada.isdigit() and len(entrada) <= 13
+        return entrada.isdigit() and len(entrada) <= 13 or entrada == ""
 
     def agregar_a_nomina(self):
         sku = self.entry_sku.get().strip()

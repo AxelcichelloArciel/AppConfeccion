@@ -66,6 +66,7 @@ class VentanaVerificarCBarras(Ventana):
             self.text_articulos.insert(tk.END, f"Ítem {idx}:\n")
             self.text_articulos.insert(tk.END, f"Código de Barras: {articulo['codigo_barra']}\n")
             self.text_articulos.insert(tk.END, f"Nombre: {articulo['nombre']}\n")
+            self.text_articulos.insert(tk.END, f"Tipo: {articulo['tipo']}\n")
             self.text_articulos.insert(tk.END, f"Peso: {articulo['peso']}\n")
             self.text_articulos.insert(tk.END, f"SKU: {articulo['codigo']}\n")
             self.text_articulos.insert(tk.END, "-"*40 + "\n")
