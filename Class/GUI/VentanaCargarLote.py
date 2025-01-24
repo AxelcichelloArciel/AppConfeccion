@@ -30,7 +30,7 @@ class VentanaCargarLote(Ventana):
         self.entry_lote.pack(pady=10, ipady=10)
         self.entry_lote.bind("<KeyRelease>", self.validar_entrada_lote)
 
-        label = tk.Label(frame, text="Ingrese los números de SKU (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
+        label = tk.Label(frame, text="Ingrese los codigos de barra (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
         label.pack(pady=10)
 
         self.text = tk.Text(frame, width=50, height=15, font=("Arial", 16), wrap=tk.WORD)
@@ -56,75 +56,74 @@ class VentanaCargarLote(Ventana):
             self.entry_apellido.insert(0, ''.join(filter(str.isalpha, contenido)))
     
     def validar_entrada_lote(self, event):
-        contenido = self.entry_lote.get() # obtiene el contenido del campo de entrada
-        if not contenido.isdigit(): # valida si el contenido es un digito
-            self.entry_lote.delete(0, tk.END) # si no es un digito borra el contenido
-            self.entry_lote.insert(0, ''.join(filter(str.isdigit, contenido))) # inserta solo los digitos en el campo de entrada
+        contenido = self.entry_lote.get()
+        if not contenido.isdigit():
+            self.entry_lote.delete(0, tk.END)
+            self.entry_lote.insert(0, ''.join(filter(str.isdigit, contenido)))
 
     def formatear_y_validar_texto(self, event):
-        contenido = self.text.get("1.0", tk.END).replace('\n', '').replace('\r', '').replace(' ', '') # Obtener el contenido del widget Text y eliminar saltos de línea, retornos de carro y espacios en blanco 
-        contenido = ''.join(filter(str.isdigit, contenido))  # Eliminar cualquier carácter no numérico
-        formateado = '' 
-        for i in range(0, len(contenido), 13): # recorre la cadena de entrada de 13 en 13
-            formateado += contenido[i:i+13] + '\n' # agrega un salto de linea cada 13 digitos
-        self.text.delete("1.0", tk.END) # borra el contenido del widget Text
-        self.text.insert("1.0", formateado.strip()) # inserta el contenido formateado en el widget Text
+        contenido = self.text.get("1.0", tk.END).replace('\n', '').replace('\r', '').replace(' ', '')
+        contenido = ''.join(filter(str.isdigit, contenido))
+        formateado = ''
+        for i in range(0, len(contenido), 13):
+            formateado += contenido[i:i+13] + '\n'
+        self.text.delete("1.0", tk.END)
+        self.text.insert("1.0", formateado.strip())
 
-    
     def validar_codigos_sku(self):
         skus = self.text.get("1.0", tk.END).strip().split()
-        codigos_nomina = {producto['codigo_barra'] for producto in self.datos_nomina} 
+        codigos_nomina = {producto['codigo_barra'] for producto in self.datos_nomina}
         for sku in skus:
             if sku not in codigos_nomina:
                 return False, sku
         return True, None
 
     def procesar_datos(self):
+        # Validar que el campo de codgios de barra no esté vacío
+        if not self.text.get("1.0", tk.END).strip():  # Si el campo de texto está vacío
+            messagebox.showerror("Error", "Debe ingresar al menos un SKU.")  # Mostrar mensaje de error
+            return
 
         valido, sku_invalido = self.validar_codigos_sku()
         if not valido:
             messagebox.showerror("Error", f"El código SKU {sku_invalido} no es válido.")
             return
 
-        apellido = self.entry_apellido.get().strip() # Obtiene el apellido ingresado
-        if not apellido: # valida si el apellido está vacío
-            print("Error, el apellido no puede estar vacío") # imprime un mensaje de error
+        apellido = self.entry_apellido.get().strip()
+        if not apellido:
+            messagebox.showerror("Error", "El apellido no puede estar vacío.")
             return
 
+        numero_lote = self.entry_lote.get().strip()
+        if not numero_lote:
+            messagebox.showerror("Error", "El número de lote no puede estar vacío.")
+            return
 
-        numero_lote = self.entry_lote.get().strip() # Obtiene el número de lote ingresado
-        if not numero_lote: # valida si el número de lote está vacío
-            print("Error, el número de lote no puede estar vacío") # imprime un mensaje de error
-            return 
-
-        entrada = self.text.get("1.0", tk.END).strip().replace('\n', '').replace('\r', '').replace(' ', '') # Obtiene el contenido del widget Text y elimina saltos de línea, retornos de carro y espacios en blanco
-        if len(entrada) % 13 != 0: # valida si la cadena de entrada no es multiplo de 13
-            print("Error, la cadena no es multiplo de 13")  # imprime un mensaje de error
+        entrada = self.text.get("1.0", tk.END).strip().replace('\n', '').replace('\r', '').replace(' ', '')
+        if len(entrada) % 13 != 0:
+            messagebox.showerror("Error", "La cadena no es múltiplo de 13.")
             return
         
-        numeros = [entrada[i:i+13] for i in range(0, len(entrada), 13)]  # separa la cadena de a conjuntos de 13 digitos (ya que los codigos de barra son conjuntos de 13)
-        conteo = Counter(numeros)  # recorre el arreglo de numeros y los agrupa por cada uno de los conjuntos.
+        numeros = [entrada[i:i+13] for i in range(0, len(entrada), 13)]
+        conteo = Counter(numeros)
 
-        # Cargo los datos de la nomina
-        with open('nomina.json', 'r') as file: # Abre el archivo nomina.json en modo lectura
-            nomina = json.load(file) # Carga el contenido del archivo en la variable nomina
+        with open('nomina.json', 'r') as file:
+            nomina = json.load(file)
 
-        # Creo diccionario para buscar rápido por código de barras
-        nomina_dict = {item['codigo_barra']: item for item in nomina} # crea un diccionario con el codigo de barras como clave y el item como valor
+        nomina_dict = {item['codigo_barra']: item for item in nomina}
 
-        productos = [] # crea una lista vacia para almacenar los productos
+        productos = []
 
-        for numero, cantidad in conteo.items(): # recorre el diccionario de conteo
-            if numero in nomina_dict: # valida si el numero de barras se encuentra en la nomina
-                sku = nomina_dict[numero]['codigo'] 
+        for numero, cantidad in conteo.items():
+            if numero in nomina_dict:
+                sku = nomina_dict[numero]['codigo']
                 nombre = nomina_dict[numero]['nombre']
                 producto = Producto(codigo=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad)
                 productos.append(producto)
             else:
-                print(f"Codigo de barras: {numero} no se encontrado en la nomina")
+                print(f"Código de barras: {numero} no se encontró en la nómina")
 
-        # Abrir la nueva ventana con los datos procesados
         ventana_datos_procesados = VentanaDatosProcesados(numero_lote, productos, apellido)
-        self.root.destroy()  # Destruir la ventana principal
+        self.root.destroy()
         ventana_datos_procesados.mostrar()
-        self.root.quit()  # Detener el bucle principal de la ventana principal
+        self.root.quit()
