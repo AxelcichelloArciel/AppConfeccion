@@ -6,6 +6,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 import os
 from datetime import datetime
 
+
+# Funcion para obtener la resolucion de la pantalla
 def obtener_res(root):
 
     w = root.winfo_screenwidth()
@@ -13,6 +15,8 @@ def obtener_res(root):
 
     return f"{w}x{h}"
 
+
+# Funcion para exportar el PDF
 def exportar_a_pdf(numero_lote, productos, apellido):
     # Crear un DataFrame con los datos de los productos
     data = []
@@ -64,3 +68,4 @@ def exportar_a_pdf(numero_lote, productos, apellido):
     doc.build(elements)
 
     return pdf_path
+

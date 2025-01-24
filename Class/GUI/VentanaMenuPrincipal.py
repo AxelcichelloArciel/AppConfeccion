@@ -6,6 +6,7 @@ import tkinter as tk
 class VentanaMenuPrincipal(Ventana):
     def __init__(self):
         super().__init__(title="Menu Principal")
+        self.crear_widgets()
 
     def crear_widgets(self):
         menu_frame = tk.Frame(self.root)

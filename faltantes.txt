@@ -1,4 +1,6 @@
 *Preguntar si pueden haber dos lotes iguales.
+*para procesar el lote debe haber al menos un producto cargado
+*Visualizador de producto de la bbdd
 *Edicion de articulos
 *eliminacion de articulos
 *Ver si un numero de lote puede cambiar o no

@@ -38,6 +38,7 @@ class VentanaVerificarCBarras(Ventana):
         self.cargar_articulos()
 
     def validar_entrada(self, event):
+        print(vars(self))
         entrada = self.entry_codigo_barras.get()
         if not entrada.isdigit():
             self.entry_codigo_barras.delete(0, tk.END)

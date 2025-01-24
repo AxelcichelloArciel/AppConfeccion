@@ -508,5 +508,11 @@
         "nombre": "Toallon de prueba",
         "peso": "155 gr.",
         "codigo_barra": "1234567891234"
+    },
+    {
+        "codigo": "112256456456",
+        "nombre": "Prueba hoy",
+        "peso": "4 gr.",
+        "codigo_barra": "7899782222222"
     }
 ]
