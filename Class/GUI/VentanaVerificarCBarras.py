@@ -22,8 +22,18 @@ class VentanaVerificarCBarras(Ventana):
         btn_verificar = tk.Button(frame, text="Verificar", command=self.verificar_codigo_barras, width=20, height=3, font=("Arial", 16))
         btn_verificar.pack(pady=10)
 
-        self.text_articulos = tk.Text(frame, width=80, height=20, font=("Arial", 10), wrap=tk.WORD)
-        self.text_articulos.pack(pady=10)
+        # Crear un Frame para el Text y la Scrollbar
+        text_frame = tk.Frame(frame)
+        text_frame.pack(pady=10)
+
+        self.text_articulos = tk.Text(text_frame, width=80, height=20, font=("Arial", 10), wrap=tk.WORD)
+        self.text_articulos.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        scrollbar = tk.Scrollbar(text_frame, command=self.text_articulos.yview, width=30)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+        self.text_articulos.config(yscrollcommand=scrollbar.set)
+        self.text_articulos.config(state=tk.DISABLED)  # Configurar como solo lectura
 
         # Crear un Frame para los botones
         btn_frame = tk.Frame(frame)
