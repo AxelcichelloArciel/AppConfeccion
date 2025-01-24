@@ -38,7 +38,6 @@ class VentanaVerificarCBarras(Ventana):
         self.cargar_articulos()
 
     def validar_entrada(self, event):
-        print(vars(self))
         entrada = self.entry_codigo_barras.get()
         if not entrada.isdigit():
             self.entry_codigo_barras.delete(0, tk.END)
@@ -50,12 +49,17 @@ class VentanaVerificarCBarras(Ventana):
         # Cargar los artículos desde el archivo nomina.json
         with open('nomina.json', 'r') as file:
             nomina = json.load(file)
-
-        # Listar todos los artículos con su identificador de ítem
-        for idx, item in enumerate(nomina):
-            self.text_articulos.insert(tk.END, f"Item {idx + 1}: {item['nombre']} (Código de Barras: {item['codigo_barra']})\n")
-
-        self.text_articulos.config(state=tk.DISABLED)  # Hacer el widget Text de solo lectura
+        
+        self.text_articulos.config(state=tk.NORMAL)  # Habilitar edición temporalmente
+        self.text_articulos.delete(1.0, tk.END)
+        for idx, articulo in enumerate(nomina, start=1):
+            self.text_articulos.insert(tk.END, f"Ítem {idx}:\n")
+            self.text_articulos.insert(tk.END, f"Código de Barras: {articulo['codigo_barra']}\n")
+            self.text_articulos.insert(tk.END, f"Nombre: {articulo['nombre']}\n")
+            self.text_articulos.insert(tk.END, f"Peso: {articulo['peso']}\n")
+            self.text_articulos.insert(tk.END, f"SKU: {articulo['codigo']}\n")
+            self.text_articulos.insert(tk.END, "-"*40 + "\n")
+        self.text_articulos.config(state=tk.DISABLED)  # Volver a solo lectura
 
     def verificar_codigo_barras(self):
         codigo_barras = self.entry_codigo_barras.get().strip()
