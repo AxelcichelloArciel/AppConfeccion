@@ -64,11 +64,11 @@ class VentanaVerificarCBarras(Ventana):
         self.text_articulos.delete(1.0, tk.END)
         for idx, articulo in enumerate(nomina, start=1):
             self.text_articulos.insert(tk.END, f"Ítem {idx}:\n")
-            self.text_articulos.insert(tk.END, f"Código de Barras: {articulo['codigo_barra']}\n")
-            self.text_articulos.insert(tk.END, f"Nombre: {articulo['nombre']}\n")
-            self.text_articulos.insert(tk.END, f"Tipo: {articulo['tipo']}\n")
-            self.text_articulos.insert(tk.END, f"Peso: {articulo['peso']}\n")
-            self.text_articulos.insert(tk.END, f"SKU: {articulo['codigo']}\n")
+            self.text_articulos.insert(tk.END, f"Código de Barras: {articulo.get('codigo_barra', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"Nombre: {articulo.get('nombre', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"Tipo: {articulo.get('tipo', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"Peso: {articulo.get('peso', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"SKU: {articulo.get('codigo', 'N/A')}\n")
             self.text_articulos.insert(tk.END, "-"*40 + "\n")
         self.text_articulos.config(state=tk.DISABLED)  # Volver a solo lectura
 

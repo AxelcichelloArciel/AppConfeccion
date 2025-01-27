@@ -14,7 +14,6 @@
         "codigo_barra": "2800005795622",
         "tipo": "Repasador",
         "cantidadxPaq": "24"
-        
     },
     {
         "codigo": "383008707050",
@@ -210,35 +209,35 @@
     },
     {
         "codigo": "487001707050",
-        "nombre": "Alfombra Baño Gris Claro",
+        "nombre": "Alfombra Ba\u00c3\u00b1o Gris Claro",
         "peso": "",
         "codigo_barra": "2800005841411",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001772050",
-        "nombre": "Alfombra Baño Gris Oscuro",
+        "nombre": "Alfombra Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "",
         "codigo_barra": "2800005841428",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001603050",
-        "nombre": "Alfombra Baño Beige",
+        "nombre": "Alfombra Ba\u00c3\u00b1o Beige",
         "peso": "",
         "codigo_barra": "2800005919738",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001581050",
-        "nombre": "Alfombra Baño Petroleo",
+        "nombre": "Alfombra Ba\u00c3\u00b1o Petroleo",
         "peso": "",
         "codigo_barra": "2800005919745",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001469050",
-        "nombre": "Alfombra Baño Azul",
+        "nombre": "Alfombra Ba\u00c3\u00b1o Azul",
         "peso": "",
         "codigo_barra": "2800005919752",
         "tipo": "Alfombra"
@@ -773,21 +772,21 @@
     },
     {
         "codigo": "487001100050",
-        "nombre": "Alfombra de Baño Blanco",
+        "nombre": "Alfombra de Ba\u00c3\u00b1o Blanco",
         "peso": "700 gr.",
         "codigo_barra": "7798426420160",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001772050",
-        "nombre": "Alfombra de Baño Gris Oscuro",
+        "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "700 gr.",
         "codigo_barra": "",
         "tipo": "Alfombra"
     },
     {
         "codigo": "487001707050",
-        "nombre": "Alfombra de Baño Gris Claro",
+        "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Claro",
         "peso": "700 gr.",
         "codigo_barra": "",
         "tipo": "Alfombra"
@@ -947,5 +946,21 @@
         "codigo_barra": "7798426420542",
         "tipo": "Bata",
         "cantidadxPaq": "1"
+    },
+    {
+        "codigo": "777777777777",
+        "nombre": "prueba",
+        "tipo": "Bata",
+        "peso": "45",
+        "cantidadxPaq": "7",
+        "codigo_barra": "1111111111111"
+    },
+    {
+        "codigo": "222222222222",
+        "nombre": "r",
+        "tipo": "r",
+        "peso": "2",
+        "cantidadxPaq": "4",
+        "codigo_barra": "1111111111112"
     }
 ]

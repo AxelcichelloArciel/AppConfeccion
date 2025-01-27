@@ -129,7 +129,10 @@ class VentanaCargarLote(Ventana):
             if numero in nomina_dict:
                 sku = nomina_dict[numero]['codigo']
                 nombre = nomina_dict[numero]['nombre']
-                producto = Producto(codigo=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad)
+                cantidadxPaq = nomina_dict[numero]['cantidadxPaq']
+                tipo = nomina_dict[numero]['tipo']
+                producto = Producto(codigo=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad, cantidadxPaq = cantidadxPaq, tipo=tipo)
+                print(producto.__repr__())
                 productos.append(producto)
             else:
                 print(f"Código de barras: {numero} no se encontró en la nómina")
