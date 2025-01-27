@@ -946,21 +946,5 @@
         "codigo_barra": "7798426420542",
         "tipo": "Bata",
         "cantidadxPaq": "1"
-    },
-    {
-        "codigo": "777777777777",
-        "nombre": "prueba",
-        "tipo": "Bata",
-        "peso": "45",
-        "cantidadxPaq": "7",
-        "codigo_barra": "1111111111111"
-    },
-    {
-        "codigo": "222222222222",
-        "nombre": "r",
-        "tipo": "r",
-        "peso": "2",
-        "cantidadxPaq": "4",
-        "codigo_barra": "1111111111112"
     }
 ]

@@ -1,7 +1,7 @@
 from .Ventana import Ventana
 import tkinter as tk
 from tkinter import messagebox
-from auxiliares import exportar_a_pdf
+import auxiliares as aux
 import sys
 import os
 
@@ -46,7 +46,7 @@ class VentanaDatosProcesados(Ventana):
         btn_cerrar = tk.Button(frame, text="Menu Principal", command=self.cerrar_ventana, width=20, height=3, font=("Arial", 16))
         btn_cerrar.pack(pady=10)
 
-        btn_imprimir = tk.Button(frame, text="Exportar a PDF", command=self.imprimir, width=20, height=3, font=("Arial", 16))
+        btn_imprimir = tk.Button(frame, text="Exportar a PDF", command=lambda: aux.exportar_a_pdf(self.numero_lote, self.productos, self.apellido), width=20, height=3, font=("Arial", 16))
         btn_imprimir.pack(pady=10)
 
     def cerrar_ventana(self):
@@ -55,11 +55,5 @@ class VentanaDatosProcesados(Ventana):
         ventana_menu_principal = VentanaMenuPrincipal()
         ventana_menu_principal.mostrar()
 
-    def imprimir(self):
-        # Exportar a PDF usando la función auxiliar
-        pdf_path = exportar_a_pdf(self.numero_lote, self.productos, self.apellido)
-
-        # Mostrar mensaje de éxito
-        messagebox.showinfo("Exportación exitosa", f"PDF guardado en {pdf_path}")
-
-        print(f"PDF guardado en {pdf_path}")
+    
+        

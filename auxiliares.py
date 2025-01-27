@@ -5,6 +5,8 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 import os
 from datetime import datetime
+import tkinter as tk
+from tkinter import messagebox
 
 
 # Funcion para obtener la resolucion de la pantalla
@@ -66,6 +68,8 @@ def exportar_a_pdf(numero_lote, productos, apellido):
 
     elements.append(table)
     doc.build(elements)
+    
+    # Mostrar mensaje de éxito
+    messagebox.showinfo("Exportación exitosa", f"PDF guardado en {pdf_path}")
 
-    return pdf_path
 
