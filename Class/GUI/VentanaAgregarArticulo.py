@@ -1,5 +1,6 @@
 from .Ventana import Ventana
 import tkinter as tk
+from ..Producto import Producto
 from tkinter import messagebox
 import json
 
@@ -58,8 +59,22 @@ class VentanaAgregarArticulo(Ventana):
 
         btn_volver_menu = tk.Button(btn_frame, text="Volver al Menú", command=self.volver_menu, width=20, height=3, font=("Arial", 16))
         btn_volver_menu.pack(side=tk.LEFT, padx=5)
-
-  
+        
+        
+    def agregar_a_nomina(self):
+        sku = self.entry_sku.get()
+        nombre = self.entry_nombre.get()
+        tipo = self.entry_tipo.get()
+        peso = self.entry_peso.get()
+        cantxpaq = self.entry_cantxpaq.get()
+        codigo_barras = self.entry_codigo_barras.get()
+        
+        producto = Producto(sku, nombre, codigo_barras, cantxpaq, tipo, peso)
+        resultado = producto.agregar_a_nomina()
+        
+        if resultado is True: 
+            self.limpiar_campos()
+            
 
     def volver_atras(self):
         self.window_manager.show_verificar_cbarras()

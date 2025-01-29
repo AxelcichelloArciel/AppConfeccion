@@ -83,7 +83,7 @@ class VentanaCargarLote(Ventana):
 
     def procesar_datos(self):
         
-        nomina = self.cargar_datos_nomina()
+        nomina = Producto.cargar_datos_nomina()
         
         
         # Validar que el campo de SKU no esté vacío
@@ -111,11 +111,11 @@ class VentanaCargarLote(Ventana):
             messagebox.showerror("Error", "La cadena no es múltiplo de 13.")
             return
         
-        numeros = [entrada[i:i+13] for i in range(0, len(entrada), 13)]
-        conteo = Counter(numeros)
+        numeros = [entrada[i:i+13] for i in range(0, len(entrada), 13)] 
+        conteo = Counter(numeros) 
 
 
-        nomina_dict = {item['codigo_barra']: item for item in nomina}
+        nomina_dict = {item['codigo_barra']: item for item in nomina} 
 
         productos = []
 
@@ -123,9 +123,11 @@ class VentanaCargarLote(Ventana):
             if numero in nomina_dict:
                 sku = nomina_dict[numero]['sku']
                 nombre = nomina_dict[numero]['nombre']
-                cantidadxPaq = nomina_dict[numero]['cantidadxPaq']
+                cantidadxPaq = int(nomina_dict[numero]['cantidadxPaq'])
                 tipo = nomina_dict[numero]['tipo']
-                producto = Producto(sku=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad, cantidadxPaq = cantidadxPaq, tipo=tipo)
+                peso = nomina_dict[numero]['peso']
+                unidadesTotales = cantidad * cantidadxPaq
+                producto = Producto(sku=sku, nombre=nombre, codigo_barra=numero,  cantidadxPaq = cantidadxPaq, tipo=tipo, peso=peso, cantidad=cantidad, unidadesTotales=unidadesTotales)
                 print(producto.__repr__())
                 productos.append(producto)
             else:

@@ -1,4 +1,5 @@
 from .Ventana import Ventana
+from ..Producto import Producto
 import tkinter as tk
 from tkinter import messagebox
 import json
@@ -11,6 +12,9 @@ class VentanaVerificarCBarras(Ventana):
     def crear_widgets(self):
         frame = tk.Frame(self.root)
         frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+        
+        nomina = Producto.cargar_datos_nomina()
+        
         
         
         
@@ -49,9 +53,6 @@ class VentanaVerificarCBarras(Ventana):
 
         btn_agregar_articulo = tk.Button(btn_frame, text="Agregar Artículo", command=self.agregar_articulo, width=20, height=3, font=("Arial", 16))
         btn_agregar_articulo.pack(side=tk.LEFT, padx=5)
-
-        nomina = self.cargar_datos_nomina()
-    
         
         self.text_articulos.config(state=tk.NORMAL)  # Habilitar edición temporalmente
         self.text_articulos.delete(1.0, tk.END)
@@ -64,24 +65,16 @@ class VentanaVerificarCBarras(Ventana):
             self.text_articulos.insert(tk.END, f"Código de Barras: {articulo.get('codigo_barra', 'N/A')}\n")
             self.text_articulos.insert(tk.END, "-"*40 + "\n")
         self.text_articulos.config(state=tk.DISABLED)  # Volver a solo lectura
+        
+        
+        
+        
+        
 
     def verificar_codigo_barras(self):
         codigo_barras = self.entry_codigo_barras.get().strip()
-        if not codigo_barras:
-            messagebox.showerror("Error", "El campo de código de barras no puede estar vacío.")
-            return
-
-        # Cargar los artículos desde el archivo nomina.json
-        nomina = self.cargar_datos_nomina()
-
-        # Verificar si el código de barras está cargado
-        for idx, item in enumerate(nomina):
-            if item['codigo_barra'] == codigo_barras:
-                messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} está cargado en el ítem {idx + 1}:\n\n {item['nombre']}")
-                return
-
-        messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} no está cargado en la nómina.")
-
+        Producto.verificar_codigo_barras(codigo_barras)
+        
     def volver_menu(self):
         self.window_manager.show_menu_principal()
 

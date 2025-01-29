@@ -36,8 +36,9 @@ class VentanaDatosProcesados(Ventana):
             self.text_productos.insert(tk.END, f"Nombre: {producto.nombre}\n")
             self.text_productos.insert(tk.END, f"Codigo de barra: {producto.codigo_barra}\n")
             self.text_productos.insert(tk.END, f"Tipo: {producto.tipo}\n")
-            self.text_productos.insert(tk.END, f"Cantidad de paquetes: {producto.cantidad}\n")
-            self.text_productos.insert(tk.END, f"Unidades totales: {producto.unidades}\n")
+            self.text_productos.insert(tk.END, f"Cantidad de paquetes contados: {producto.cantidad}\n")
+            self.text_productos.insert(tk.END, f"Unidades por paquete: {producto.cantidadxPaq}\n")
+            self.text_productos.insert(tk.END, f"Unidades totales: {producto.unidadesTotales}\n")
             self.text_productos.insert(tk.END, "-"*40 + "\n")
 
         self.text_productos.config(state=tk.DISABLED)  # Hacer el widget Text de solo lectura

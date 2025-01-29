@@ -1,12 +1,12 @@
 import pandas as pd
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import letter, landscape
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 import os
 from datetime import datetime
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, simpledialog
 
 
 # Funcion para obtener la resolucion de la pantalla
@@ -29,10 +29,11 @@ def exportar_a_pdf(numero_lote, productos, apellido):
             producto.codigo_barra,
             producto.tipo,
             producto.cantidad,
-            producto.unidades
+            producto.cantidadxPaq,
+            producto.unidadesTotales
         ])
     
-    df = pd.DataFrame(data, columns=["SKU", "Nombre", "Codigo de Barra", "Tipo", "Cantidad de paquetes", "Cantidad de unidades"])
+    df = pd.DataFrame(data, columns=["SKU", "Nombre", "Codigo de Barra", "Tipo", "Cantidad de paquetes", "Cantidad de por Paquete", "Unidades Totales"])
 
     # Crear la carpeta en el escritorio si no existe
     desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
@@ -42,7 +43,22 @@ def exportar_a_pdf(numero_lote, productos, apellido):
 
     # Crear el archivo PDF
     pdf_path = os.path.join(folder_path, f"{numero_lote} - Recuento.pdf")
-    doc = SimpleDocTemplate(pdf_path, pagesize=letter)
+    
+    
+    
+    # Verificar si el archivo ya existe
+    if os.path.exists(pdf_path):
+        respuesta = messagebox.askyesno("Archivo existente", f"El archivo {pdf_path} ya existe. ¿Desea sobrescribirlo?")
+        if not respuesta:
+            nuevo_nombre = simpledialog.askstring("Guardar como", "Ingrese el nuevo nombre para el archivo:")
+            if nuevo_nombre:
+                pdf_path = os.path.join(folder_path, f"{nuevo_nombre}.pdf")
+            else:
+                messagebox.showinfo("Cancelado", "La exportación ha sido cancelada.")
+                return
+    
+    
+    doc = SimpleDocTemplate(pdf_path, pagesize=landscape(letter))
     elements = []
 
     # Agregar el número de lote y la fecha actual al PDF

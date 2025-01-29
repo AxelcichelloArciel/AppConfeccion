@@ -212,35 +212,40 @@
         "nombre": "Alfombra Ba\u00c3\u00b1o Gris Claro",
         "peso": "",
         "codigo_barra": "2800005841411",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001772050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "",
         "codigo_barra": "2800005841428",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001603050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Beige",
         "peso": "",
         "codigo_barra": "2800005919738",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001581050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Petroleo",
         "peso": "",
         "codigo_barra": "2800005919745",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001469050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Azul",
         "peso": "",
         "codigo_barra": "2800005919752",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "184014603050",
@@ -775,21 +780,24 @@
         "nombre": "Alfombra de Ba\u00c3\u00b1o Blanco",
         "peso": "700 gr.",
         "codigo_barra": "7798426420160",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001772050",
         "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "700 gr.",
         "codigo_barra": "",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "487001707050",
         "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Claro",
         "peso": "700 gr.",
         "codigo_barra": "",
-        "tipo": "Alfombra"
+        "tipo": "Alfombra",
+        "cantidadxPaq": "12"
     },
     {
         "sku": "584001100050",
@@ -948,51 +956,27 @@
         "cantidadxPaq": "1"
     },
     {
-        "sku": "123456789123",
-        "nombre": "4565645654sadda",
-        "tipo": "teeeela",
-        "peso": "4545455",
-        "cantidadxPaq": "100",
-        "codigo_barra": "4444444444444"
-    },
-    {
-        "sku": "777777777788",
-        "nombre": "ASD",
-        "tipo": "tipo",
-        "peso": "78",
-        "cantidadxPaq": "7",
-        "codigo_barra": "7777777"
+        "sku": "444444444444",
+        "nombre": "44",
+        "peso": "4",
+        "codigo_barra": "4444444444444",
+        "tipo": "w",
+        "cantidadxPaq": 4
     },
     {
         "sku": "555555555555",
-        "nombre": "wer",
-        "tipo": "rwe",
-        "peso": "31",
-        "cantidadxPaq": "321",
-        "codigo_barra": "77777777"
+        "nombre": "5",
+        "peso": "5",
+        "codigo_barra": "5555555555555",
+        "tipo": "r",
+        "cantidadxPaq": 5
     },
     {
-        "sku": "666666666666",
-        "nombre": "a",
-        "tipo": "a",
-        "peso": "6",
-        "cantidadxPaq": "6",
-        "codigo_barra": "6666666666666"
-    },
-    {
-        "sku": "323132321",
-        "nombre": "qwewwq",
-        "tipo": "qew",
-        "peso": "2",
-        "cantidadxPaq": "2",
-        "codigo_barra": "4444411111111"
-    },
-    {
-        "sku": "333333333333",
-        "nombre": "probar",
-        "tipo": "p",
-        "peso": "3",
-        "cantidadxPaq": "3",
-        "codigo_barra": "3333333333333"
+        "sku": "321131213211",
+        "nombre": "qweewqqeqqweqeqweqwewqqweqeqw",
+        "peso": "32",
+        "codigo_barra": "2222222222222",
+        "tipo": "ewq",
+        "cantidadxPaq": 232
     }
 ]
