@@ -1,12 +1,9 @@
 from .Ventana import Ventana
-from .VentanaCargarLote import VentanaCargarLote
-from .VentanaVerificarCBarras import VentanaVerificarCBarras
 import tkinter as tk
 
 class VentanaMenuPrincipal(Ventana):
-    def __init__(self):
-        super().__init__(title="Menu Principal")
-        self.crear_widgets()
+    def __init__(self, root, window_manager):
+        super().__init__(root, window_manager, title="Menú Principal")
 
     def crear_widgets(self):
         menu_frame = tk.Frame(self.root)
@@ -19,14 +16,7 @@ class VentanaMenuPrincipal(Ventana):
         btn_verificar_sku.pack(pady=10)
 
     def cargar_lote(self):
-        ventana_cargar_lote = VentanaCargarLote()
-        self.root.destroy()
-        ventana_cargar_lote.mostrar()
-        self.root.quit()  # Detener el bucle principal de la ventana principal
-
+        self.window_manager.show_cargar_lote()
 
     def verificar_sku(self):
-        ventana_verificar_cbarras = VentanaVerificarCBarras()
-        self.root.destroy()
-        ventana_verificar_cbarras.mostrar()
-        self.root.quit()
+        self.window_manager.show_verificar_cbarras()

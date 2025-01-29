@@ -6,31 +6,35 @@ from tkinter import messagebox
 from collections import Counter
 import json
 
+
 class VentanaCargarLote(Ventana):
-    def __init__(self):
-        super().__init__(title="Cargar Lote")
-        self.crear_widgets()
-        self.cargar_datos_nomina()
+    def __init__(self, root, window_manager):
+        super().__init__(root, window_manager, title="Cargar Lote")
 
     def crear_widgets(self):
         frame = tk.Frame(self.root)
-        frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+        frame.pack(padx=10, pady=10)
 
+
+        # Apellido
         label_apellido = tk.Label(frame, text="Ingrese su apellido:", font=("Arial", 12))
         label_apellido.pack(pady=10)
-
-        self.entry_apellido = tk.Entry(frame, width=50, font=("Arial", 16))
+        vcm_apellido = (self.root.register(self.valida_texto), '%P')
+        self.entry_apellido = tk.Entry(frame, width=50, font=("Arial", 16), validate="key", validatecommand=vcm_apellido)
         self.entry_apellido.pack(pady=10, ipady=10)
-        self.entry_apellido.bind("<KeyRelease>", self.validar_entrada_apellido)
 
+
+        # Lote
         label_lote = tk.Label(frame, text="Ingrese el número de lote:", font=("Arial", 12))
         label_lote.pack(pady=10)
-
-        self.entry_lote = tk.Entry(frame, width=50, font=("Arial", 16))
+        vcm_lote = (self.root.register(self.valida_numero), '%P')
+        self.entry_lote = tk.Entry(frame, width=50, font=("Arial", 16), validate="key", validatecommand=vcm_lote)
         self.entry_lote.pack(pady=10, ipady=10)
-        self.entry_lote.bind("<KeyRelease>", self.validar_entrada_lote)
 
-        label = tk.Label(frame, text="Ingrese los números de SKU (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
+
+
+        # Cadena de Codigos de barra
+        label = tk.Label(frame, text="Ingrese los codigos de barra (cadena continua de 13 dígitos cada uno):", font=("Arial", 12))
         label.pack(pady=10)
 
         # Crear un Frame para el Text y la Scrollbar
@@ -54,24 +58,12 @@ class VentanaCargarLote(Ventana):
         btn_volver = tk.Button(btn_frame, text="Volver", command=self.volver_atras, width=20, height=3, font=("Arial", 16))
         btn_volver.pack(side=tk.LEFT, padx=5)
 
-        self.text.bind("<KeyRelease>", self.formatear_y_validar_texto)
+        self.text.bind("<KeyRelease>", self.formatear_y_validar_texto) # Formatear y validar el texto en el Text
 
-    def cargar_datos_nomina(self):
-        with open('nomina.json', 'r') as file:
-            self.datos_nomina = json.load(file)
-
-    def validar_entrada_apellido(self, event):
-        contenido = self.entry_apellido.get()
-        if not contenido.isalpha():
-            self.entry_apellido.delete(0, tk.END)
-            self.entry_apellido.insert(0, ''.join(filter(str.isalpha, contenido)))
     
-    def validar_entrada_lote(self, event):
-        contenido = self.entry_lote.get()
-        if not contenido.isdigit():
-            self.entry_lote.delete(0, tk.END)
-            self.entry_lote.insert(0, ''.join(filter(str.isdigit, contenido)))
-
+    
+    
+    
     def formatear_y_validar_texto(self, event):
         contenido = self.text.get("1.0", tk.END).replace('\n', '').replace('\r', '').replace(' ', '')
         contenido = ''.join(filter(str.isdigit, contenido))
@@ -81,21 +73,25 @@ class VentanaCargarLote(Ventana):
         self.text.delete("1.0", tk.END)
         self.text.insert("1.0", formateado.strip())
 
-    def validar_codigos_sku(self):
+    def validar_codigos_sku(self, nomina):
         skus = self.text.get("1.0", tk.END).strip().split()
-        codigos_nomina = {producto['codigo_barra'] for producto in self.datos_nomina}
+        codigos_nomina = {producto['codigo_barra'] for producto in nomina}
         for sku in skus:
             if sku not in codigos_nomina:
                 return False, sku
         return True, None
 
     def procesar_datos(self):
+        
+        nomina = self.cargar_datos_nomina()
+        
+        
         # Validar que el campo de SKU no esté vacío
         if not self.text.get("1.0", tk.END).strip():
             messagebox.showerror("Error", "Debe ingresar al menos un codigo de barras.")
             return
 
-        valido, sku_invalido = self.validar_codigos_sku()
+        valido, sku_invalido = self.validar_codigos_sku(nomina)
         if not valido:
             messagebox.showerror("Error", f"El código SKU {sku_invalido} no es válido.")
             return
@@ -118,8 +114,6 @@ class VentanaCargarLote(Ventana):
         numeros = [entrada[i:i+13] for i in range(0, len(entrada), 13)]
         conteo = Counter(numeros)
 
-        with open('nomina.json', 'r') as file:
-            nomina = json.load(file)
 
         nomina_dict = {item['codigo_barra']: item for item in nomina}
 
@@ -127,26 +121,20 @@ class VentanaCargarLote(Ventana):
 
         for numero, cantidad in conteo.items():
             if numero in nomina_dict:
-                sku = nomina_dict[numero]['codigo']
+                sku = nomina_dict[numero]['sku']
                 nombre = nomina_dict[numero]['nombre']
                 cantidadxPaq = nomina_dict[numero]['cantidadxPaq']
                 tipo = nomina_dict[numero]['tipo']
-                producto = Producto(codigo=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad, cantidadxPaq = cantidadxPaq, tipo=tipo)
+                producto = Producto(sku=sku, nombre=nombre, codigo_barra=numero, cantidad=cantidad, cantidadxPaq = cantidadxPaq, tipo=tipo)
                 print(producto.__repr__())
                 productos.append(producto)
             else:
                 print(f"Código de barras: {numero} no se encontró en la nómina")
 
-        ventana_datos_procesados = VentanaDatosProcesados(numero_lote, productos, apellido)
-        self.root.destroy()
-        ventana_datos_procesados.mostrar()
-        self.root.quit()
+        
+        
+        self.window_manager.show_datos_procesados(numero_lote, productos, apellido)
 
     def volver_atras(self):
-        from .VentanaMenuPrincipal import VentanaMenuPrincipal
-
-        ventana_menu_principal = VentanaMenuPrincipal()
-        self.root.destroy()  # Cierra la ventana actual
-        ventana_menu_principal.mostrar()
-        self.root.quit()
+        self.window_manager.show_menu_principal()
 

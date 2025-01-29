@@ -1,5 +1,5 @@
-from Class.GUI.VentanaMenuPrincipal import VentanaMenuPrincipal
+from Class.WindowManager import WindowManager
 
 if __name__ == "__main__":
-    ventana_principal = VentanaMenuPrincipal()
-    ventana_principal.mostrar()
+    manager = WindowManager()
+    manager.show_menu_principal()  # Inicia el bucle principal de Tkinter

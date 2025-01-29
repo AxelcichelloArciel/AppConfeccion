@@ -10,12 +10,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../.
 
 
 class VentanaDatosProcesados(Ventana):
-    def __init__(self, numero_lote, productos, apellido):
+    def __init__(self, root, window_manager, numero_lote, productos, apellido):
         self.numero_lote = numero_lote  # Inicializar antes de llamar a super().__init__()
         self.productos = productos  # Inicializar antes de llamar a super().__init__()
         self.apellido = apellido  # Inicializar antes de llamar a super().__init__()
-        super().__init__(title="Datos Procesados")
-        self.crear_widgets()
+        super().__init__(root, window_manager, title="Datos Procesados")
 
     def crear_widgets(self):
         frame = tk.Frame(self.root)
@@ -33,7 +32,7 @@ class VentanaDatosProcesados(Ventana):
 
         # Formatear y agregar los productos al widget Text
         for producto in self.productos:
-            self.text_productos.insert(tk.END, f"SKU: {producto.codigo}\n")
+            self.text_productos.insert(tk.END, f"SKU: {producto.sku}\n")
             self.text_productos.insert(tk.END, f"Nombre: {producto.nombre}\n")
             self.text_productos.insert(tk.END, f"Codigo de barra: {producto.codigo_barra}\n")
             self.text_productos.insert(tk.END, f"Tipo: {producto.tipo}\n")
@@ -50,10 +49,7 @@ class VentanaDatosProcesados(Ventana):
         btn_imprimir.pack(pady=10)
 
     def cerrar_ventana(self):
-        from .VentanaMenuPrincipal import VentanaMenuPrincipal
-        self.root.destroy()  # Destruir la ventana
-        ventana_menu_principal = VentanaMenuPrincipal()
-        ventana_menu_principal.mostrar()
+        self.window_manager.show_menu_principal()
 
     
         

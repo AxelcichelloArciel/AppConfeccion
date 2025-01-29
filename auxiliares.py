@@ -24,7 +24,7 @@ def exportar_a_pdf(numero_lote, productos, apellido):
     data = []
     for producto in productos:
         data.append([
-            producto.codigo,
+            producto.sku,
             producto.nombre,
             producto.codigo_barra,
             producto.tipo,

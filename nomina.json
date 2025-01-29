@@ -1,6 +1,6 @@
 [
     {
-        "codigo": "383008469050",
+        "sku": "383008469050",
         "nombre": "Repasador Rayas Azul",
         "peso": "",
         "codigo_barra": "2800005795615",
@@ -8,7 +8,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383008201050",
+        "sku": "383008201050",
         "nombre": "Repasador Rayas Crema",
         "peso": "",
         "codigo_barra": "2800005795622",
@@ -16,7 +16,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383008707050",
+        "sku": "383008707050",
         "nombre": "Repasador Rayas Gris",
         "peso": "",
         "codigo_barra": "2800005795592",
@@ -24,7 +24,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383008772050",
+        "sku": "383008772050",
         "nombre": "Repasador Rayas Gris O",
         "peso": "",
         "codigo_barra": "2800005795608",
@@ -32,7 +32,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009469050",
+        "sku": "383009469050",
         "nombre": "Repasador Toalla Azul",
         "peso": "",
         "codigo_barra": "2800005795653",
@@ -40,7 +40,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009603050",
+        "sku": "383009603050",
         "nombre": "Repasador Toalla Beige",
         "peso": "",
         "codigo_barra": "2800005795660",
@@ -48,7 +48,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009772050",
+        "sku": "383009772050",
         "nombre": "Repasador Toalla Gris",
         "peso": "",
         "codigo_barra": "2800005795639",
@@ -56,7 +56,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009707050",
+        "sku": "383009707050",
         "nombre": "Repasador Toalla Gris O",
         "peso": "",
         "codigo_barra": "2800005795646",
@@ -64,7 +64,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383001106050",
+        "sku": "383001106050",
         "nombre": "Repasador Toall Crud",
         "peso": "",
         "codigo_barra": "2800005800432",
@@ -72,7 +72,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383001772050",
+        "sku": "383001772050",
         "nombre": "Repasador Toall Gris",
         "peso": "",
         "codigo_barra": "2800005800449",
@@ -80,7 +80,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "284003606050",
+        "sku": "284003606050",
         "nombre": "Toalla Panal Guard Beige",
         "peso": "420GR",
         "codigo_barra": "2800005795684",
@@ -88,7 +88,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284003100050",
+        "sku": "284003100050",
         "nombre": "Toalla Panal Guard Blanca",
         "peso": "420GR",
         "codigo_barra": "2800005795677",
@@ -96,7 +96,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284003707050",
+        "sku": "284003707050",
         "nombre": "Toalla Panal Guard Gris",
         "peso": "420GR",
         "codigo_barra": "2800005795707",
@@ -104,7 +104,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284003772050",
+        "sku": "284003772050",
         "nombre": "Toalla Panal Guard Gris O",
         "peso": "420GR",
         "codigo_barra": "2800005795691",
@@ -112,7 +112,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "184003603050",
+        "sku": "184003603050",
         "nombre": "Toallon Panal Guard Beige",
         "peso": "420GR",
         "codigo_barra": "2800005795721",
@@ -120,7 +120,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184003100050",
+        "sku": "184003100050",
         "nombre": "Toallon Panal Guard Blanca",
         "peso": "420GR",
         "codigo_barra": "2800005795714",
@@ -128,7 +128,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184003707050",
+        "sku": "184003707050",
         "nombre": "Toallon Panal Guard Gris",
         "peso": "420GR",
         "codigo_barra": "2800005795509",
@@ -136,7 +136,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184003772050",
+        "sku": "184003772050",
         "nombre": "Toallon Panal Guard Gris O",
         "peso": "420GR",
         "codigo_barra": "2800005795493",
@@ -144,7 +144,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "284007469050",
+        "sku": "284007469050",
         "nombre": "Toalla Sweet Azul",
         "peso": "450GR",
         "codigo_barra": "2800005795547",
@@ -152,7 +152,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284007100050",
+        "sku": "284007100050",
         "nombre": "Toalla Sweet Blanca",
         "peso": "450GR",
         "codigo_barra": "2800005795523",
@@ -160,7 +160,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284007707050",
+        "sku": "284007707050",
         "nombre": "Toalla Sweet Gris",
         "peso": "450GR",
         "codigo_barra": "2800005495530",
@@ -168,7 +168,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284007581050",
+        "sku": "284007581050",
         "nombre": "Toalla Sweet Petroleo",
         "peso": "450GR",
         "codigo_barra": "2800005795516",
@@ -176,7 +176,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "184007469050",
+        "sku": "184007469050",
         "nombre": "Toallon Sweet Azul",
         "peso": "450GR",
         "codigo_barra": "2800005795585",
@@ -184,7 +184,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184007100050",
+        "sku": "184007100050",
         "nombre": "Toallon Sweet Blanca",
         "peso": "450GR",
         "codigo_barra": "2800005795554",
@@ -192,7 +192,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184007707050",
+        "sku": "184007707050",
         "nombre": "Toallon Sweet Gris",
         "peso": "450GR",
         "codigo_barra": "2800005795561",
@@ -200,7 +200,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184007581050",
+        "sku": "184007581050",
         "nombre": "Toallon Sweet Petroleo",
         "peso": "450GR",
         "codigo_barra": "2800005795578",
@@ -208,42 +208,42 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "487001707050",
+        "sku": "487001707050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Gris Claro",
         "peso": "",
         "codigo_barra": "2800005841411",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001772050",
+        "sku": "487001772050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "",
         "codigo_barra": "2800005841428",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001603050",
+        "sku": "487001603050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Beige",
         "peso": "",
         "codigo_barra": "2800005919738",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001581050",
+        "sku": "487001581050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Petroleo",
         "peso": "",
         "codigo_barra": "2800005919745",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001469050",
+        "sku": "487001469050",
         "nombre": "Alfombra Ba\u00c3\u00b1o Azul",
         "peso": "",
         "codigo_barra": "2800005919752",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "184014603050",
+        "sku": "184014603050",
         "nombre": "Toallon Playero Beige/Bco",
         "peso": "",
         "codigo_barra": "2800005904475",
@@ -251,7 +251,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184018772050",
+        "sku": "184018772050",
         "nombre": "Toallon Playero Gris/Beige",
         "peso": "",
         "codigo_barra": "2800005904482",
@@ -259,7 +259,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184016143050",
+        "sku": "184016143050",
         "nombre": "Toallon Playero Lima/Hueso",
         "peso": "",
         "codigo_barra": "2800005904499",
@@ -267,7 +267,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "1840155840500",
+        "sku": "1840155840500",
         "nombre": "Toallon Playero Verde/Hueso",
         "peso": "",
         "codigo_barra": "2800005904505",
@@ -275,7 +275,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "383010100050",
+        "sku": "383010100050",
         "nombre": "Repasador Crudo Rayas Rojo",
         "peso": "",
         "codigo_barra": "2800005886467",
@@ -283,7 +283,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383011100050",
+        "sku": "383011100050",
         "nombre": "Repasador Crudo Rayas Verde",
         "peso": "",
         "codigo_barra": "2800005886528",
@@ -291,7 +291,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "184011538050",
+        "sku": "184011538050",
         "nombre": "Toallon Palermo Verde",
         "peso": "420 gr.",
         "codigo_barra": "7798426420153",
@@ -299,7 +299,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184011469050",
+        "sku": "184011469050",
         "nombre": "Toallon Palermo Azul",
         "peso": "420 gr.",
         "codigo_barra": "7798426420146",
@@ -307,7 +307,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184011721050",
+        "sku": "184011721050",
         "nombre": "Toallon Palermo Gris",
         "peso": "420 gr.",
         "codigo_barra": "7798426420139",
@@ -315,7 +315,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184011100050",
+        "sku": "184011100050",
         "nombre": "Toallon Palermo Blanco",
         "peso": "420 gr.",
         "codigo_barra": "7798426420238",
@@ -323,7 +323,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184011106050",
+        "sku": "184011106050",
         "nombre": "Toallon Palermo Nature",
         "peso": "420 gr.",
         "codigo_barra": "7798426420245",
@@ -331,7 +331,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184011221050",
+        "sku": "184011221050",
         "nombre": "Toallon Palermo Rosa",
         "peso": "420 gr.",
         "codigo_barra": "7798426420252",
@@ -339,7 +339,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "284011721050",
+        "sku": "284011721050",
         "nombre": "Toalla Palermo Gris",
         "peso": "420 gr.",
         "codigo_barra": "7798426420122",
@@ -347,7 +347,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284011469050",
+        "sku": "284011469050",
         "nombre": "Toalla Palermo Azul",
         "peso": "420 gr.",
         "codigo_barra": "7798426420115",
@@ -355,7 +355,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284011538050",
+        "sku": "284011538050",
         "nombre": "Toalla Palermo Verde",
         "peso": "420 gr.",
         "codigo_barra": "7798426420108",
@@ -363,7 +363,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284011100050",
+        "sku": "284011100050",
         "nombre": "Toalla Palermo Blanco",
         "peso": "420 gr.",
         "codigo_barra": "7798426420276",
@@ -371,7 +371,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284011106050",
+        "sku": "284011106050",
         "nombre": "Toalla Palermo Nature",
         "peso": "420 gr.",
         "codigo_barra": "7798426420283",
@@ -379,7 +379,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284011221050",
+        "sku": "284011221050",
         "nombre": "Toalla Palermo Rosa",
         "peso": "420 gr.",
         "codigo_barra": "7798426420269",
@@ -387,7 +387,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "183010324050",
+        "sku": "183010324050",
         "nombre": "Toallon Ibera Morado",
         "peso": "360 gr.",
         "codigo_barra": "7798426420092",
@@ -395,7 +395,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183010204050",
+        "sku": "183010204050",
         "nombre": "Toallon Ibera Rosa",
         "peso": "360 gr.",
         "codigo_barra": "7798426420085",
@@ -403,7 +403,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183010416050",
+        "sku": "183010416050",
         "nombre": "Toallon Ibera Aero",
         "peso": "360 gr.",
         "codigo_barra": "7798426420078",
@@ -411,7 +411,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183010100050",
+        "sku": "183010100050",
         "nombre": "Toallon Ibera Blanco",
         "peso": "360 gr.",
         "codigo_barra": "7798426420207",
@@ -419,7 +419,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183010106050",
+        "sku": "183010106050",
         "nombre": "Toallon Ibera Nature",
         "peso": "360 gr.",
         "codigo_barra": "7798426420214",
@@ -427,7 +427,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183010713050",
+        "sku": "183010713050",
         "nombre": "Toallon Ibera Gris",
         "peso": "360 gr.",
         "codigo_barra": "7798426420221",
@@ -435,7 +435,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "283010416050",
+        "sku": "283010416050",
         "nombre": "Toalla Ibera Aero",
         "peso": "360 gr.",
         "codigo_barra": "7798426420061",
@@ -443,7 +443,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283010324050",
+        "sku": "283010324050",
         "nombre": "Toalla Ibera Morado",
         "peso": "360 gr.",
         "codigo_barra": "7798426420054",
@@ -451,7 +451,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283010204050",
+        "sku": "283010204050",
         "nombre": "Toalla Ibera Rosa",
         "peso": "360 gr.",
         "codigo_barra": "7798426420047",
@@ -459,7 +459,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283010100050",
+        "sku": "283010100050",
         "nombre": "Toalla Ibera Blanco",
         "peso": "360 gr.",
         "codigo_barra": "7798426420177",
@@ -467,7 +467,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283010106050",
+        "sku": "283010106050",
         "nombre": "Toalla Ibera Nature",
         "peso": "360 gr.",
         "codigo_barra": "7798426420184",
@@ -475,7 +475,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283010713050",
+        "sku": "283010713050",
         "nombre": "Toalla Ibera Gris",
         "peso": "360 gr.",
         "codigo_barra": "7798426420191",
@@ -483,7 +483,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "184012100049",
+        "sku": "184012100049",
         "nombre": "Toallon Lacar Blanco",
         "peso": "420 gr.",
         "codigo_barra": "7798426420351",
@@ -491,7 +491,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184012106050",
+        "sku": "184012106050",
         "nombre": "Toallon Lacar Nature",
         "peso": "420 gr.",
         "codigo_barra": "7798426420368",
@@ -499,7 +499,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184012603050",
+        "sku": "184012603050",
         "nombre": "Toallon Lacar Beige",
         "peso": "420 gr.",
         "codigo_barra": "7798426420375",
@@ -507,7 +507,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184012581050",
+        "sku": "184012581050",
         "nombre": "Toallon Lacar Petroleo",
         "peso": "420 gr.",
         "codigo_barra": "7798426420382",
@@ -515,7 +515,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184012264050",
+        "sku": "184012264050",
         "nombre": "Toallon Lacar Brick",
         "peso": "420 gr.",
         "codigo_barra": "7798426420399",
@@ -523,7 +523,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "184012772050",
+        "sku": "184012772050",
         "nombre": "Toallon Lacar Gris Topo",
         "peso": "420 gr.",
         "codigo_barra": "7798426420405",
@@ -531,7 +531,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "284012100050",
+        "sku": "284012100050",
         "nombre": "Toalla Lacar Blanco",
         "peso": "420 gr.",
         "codigo_barra": "7798426420412",
@@ -539,7 +539,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284012106050",
+        "sku": "284012106050",
         "nombre": "Toalla Lacar Nature",
         "peso": "420 gr.",
         "codigo_barra": "7798426420429",
@@ -547,7 +547,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284012603050",
+        "sku": "284012603050",
         "nombre": "Toalla Lacar Beige",
         "peso": "420 gr.",
         "codigo_barra": "7798426420436",
@@ -555,7 +555,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284012581050",
+        "sku": "284012581050",
         "nombre": "Toalla Lacar Petroleo",
         "peso": "420 gr.",
         "codigo_barra": "7798426420443",
@@ -563,7 +563,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284012264050",
+        "sku": "284012264050",
         "nombre": "Toalla Lacar Brick",
         "peso": "420 gr.",
         "codigo_barra": "7798426420450",
@@ -571,7 +571,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "284012772050",
+        "sku": "284012772050",
         "nombre": "Toalla Lacar Gris Topo",
         "peso": "420 gr.",
         "codigo_barra": "7798426420467",
@@ -579,7 +579,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011234050",
+        "sku": "283011234050",
         "nombre": "Toalla Alumine Rosa Chicle 234",
         "peso": "360 gr.",
         "codigo_barra": "7798426420702",
@@ -587,7 +587,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011349050",
+        "sku": "283011349050",
         "nombre": "Toalla Alumine Orquidea 349",
         "peso": "360 gr.",
         "codigo_barra": "7798426420719",
@@ -595,7 +595,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011527050",
+        "sku": "283011527050",
         "nombre": "Toalla Alumine Esmeralda 527",
         "peso": "360 gr.",
         "codigo_barra": "7798426420726",
@@ -603,7 +603,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011423050",
+        "sku": "283011423050",
         "nombre": "Toalla Alumine Azul Acero 423",
         "peso": "360 gr.",
         "codigo_barra": "7798426420733",
@@ -611,7 +611,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011237050",
+        "sku": "283011237050",
         "nombre": "Toalla Alumine Naranja 237",
         "peso": "360 gr.",
         "codigo_barra": "7798426420740",
@@ -619,7 +619,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011100050",
+        "sku": "283011100050",
         "nombre": "Toalla Alumine Blanco 100",
         "peso": "360 gr.",
         "codigo_barra": "7798426420757",
@@ -627,7 +627,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "283011143050",
+        "sku": "283011143050",
         "nombre": "Toalla Alumine Lima 143",
         "peso": "360 gr.",
         "codigo_barra": "7798426420849",
@@ -635,7 +635,7 @@
         "cantidadxPaq": "12"
     },
     {
-        "codigo": "183011234050",
+        "sku": "183011234050",
         "nombre": "Toallon Alumine Rosa Chicle 234",
         "peso": "360 gr.",
         "codigo_barra": "7798426420771",
@@ -643,7 +643,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011143050",
+        "sku": "183011143050",
         "nombre": "Toallon Alumine Lima 143",
         "peso": "360 gr.",
         "codigo_barra": "7798426420832",
@@ -651,7 +651,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011349050",
+        "sku": "183011349050",
         "nombre": "Toallon Alumine Orquidea 349",
         "peso": "360 gr.",
         "codigo_barra": "7798426420788",
@@ -659,7 +659,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011527050",
+        "sku": "183011527050",
         "nombre": "Toallon Alumine Esmeralda 527",
         "peso": "360 gr.",
         "codigo_barra": "7798426420795",
@@ -667,7 +667,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011423050",
+        "sku": "183011423050",
         "nombre": "Toallon Alumine Aero 423",
         "peso": "360 gr.",
         "codigo_barra": "7798426420801",
@@ -675,7 +675,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011237050",
+        "sku": "183011237050",
         "nombre": "Toallon Alumine Naranja 237",
         "peso": "360 gr.",
         "codigo_barra": "7798426420818",
@@ -683,7 +683,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "183011100050",
+        "sku": "183011100050",
         "nombre": "Toallon Alumine Blanco 100",
         "peso": "360 gr.",
         "codigo_barra": "7798426420764",
@@ -691,7 +691,7 @@
         "cantidadxPaq": "6"
     },
     {
-        "codigo": "383001707050",
+        "sku": "383001707050",
         "nombre": "Repasador Lino con Flecos Gris",
         "peso": "360 gr.",
         "codigo_barra": "7798426420290",
@@ -699,7 +699,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383001202050",
+        "sku": "383001202050",
         "nombre": "Repasador Lino con Flecos Rosado",
         "peso": "360 gr.",
         "codigo_barra": "7798426420306",
@@ -707,7 +707,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383001608050",
+        "sku": "383001608050",
         "nombre": "Repasador Lino con Flecos Camel",
         "peso": "360 gr.",
         "codigo_barra": "7798426420313",
@@ -715,7 +715,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383001537050",
+        "sku": "383001537050",
         "nombre": "Repasador Lino con Flecos Verde Claro",
         "peso": "360 gr.",
         "codigo_barra": "7798426420337",
@@ -723,7 +723,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009100050",
+        "sku": "383009100050",
         "nombre": "Repasador Canela Blanco",
         "peso": "360 gr.",
         "codigo_barra": "7798426420641",
@@ -731,7 +731,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009721050",
+        "sku": "383009721050",
         "nombre": "Repasador Canela Gris",
         "peso": "360 gr.",
         "codigo_barra": "7798426420658",
@@ -739,7 +739,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009466050",
+        "sku": "383009466050",
         "nombre": "Repasador Canela Azulino",
         "peso": "360 gr.",
         "codigo_barra": "7798426420665",
@@ -747,7 +747,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009581050",
+        "sku": "383009581050",
         "nombre": "Repasador Canela Petroleo",
         "peso": "360 gr.",
         "codigo_barra": "7798426420672",
@@ -755,7 +755,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009368050",
+        "sku": "383009368050",
         "nombre": "Repasador Canela Lila",
         "peso": "360 gr.",
         "codigo_barra": "7798426420689",
@@ -763,7 +763,7 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "383009216050",
+        "sku": "383009216050",
         "nombre": "Repasador Canela Rosa Viejo",
         "peso": "360 gr.",
         "codigo_barra": "7798426420696",
@@ -771,56 +771,56 @@
         "cantidadxPaq": "24"
     },
     {
-        "codigo": "487001100050",
+        "sku": "487001100050",
         "nombre": "Alfombra de Ba\u00c3\u00b1o Blanco",
         "peso": "700 gr.",
         "codigo_barra": "7798426420160",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001772050",
+        "sku": "487001772050",
         "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Oscuro",
         "peso": "700 gr.",
         "codigo_barra": "",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "487001707050",
+        "sku": "487001707050",
         "nombre": "Alfombra de Ba\u00c3\u00b1o Gris Claro",
         "peso": "700 gr.",
         "codigo_barra": "",
         "tipo": "Alfombra"
     },
     {
-        "codigo": "584001100050",
+        "sku": "584001100050",
         "nombre": "Tela Rizo Blanca",
         "peso": "400 gr.",
         "codigo_barra": "",
         "tipo": "Tela"
     },
     {
-        "codigo": "584001204050",
+        "sku": "584001204050",
         "nombre": "Tela Rizo Rosa",
         "peso": "400 gr.",
         "codigo_barra": "",
         "tipo": "Tela"
     },
     {
-        "codigo": "584001721050",
+        "sku": "584001721050",
         "nombre": "Tela Rizo Gris",
         "peso": "400 gr.",
         "codigo_barra": "",
         "tipo": "Tela"
     },
     {
-        "codigo": "584001106050",
+        "sku": "584001106050",
         "nombre": "Tela Rizo Nature",
         "peso": "400 gr.",
         "codigo_barra": "",
         "tipo": "Tela"
     },
     {
-        "codigo": "687001100010",
+        "sku": "687001100010",
         "nombre": "Bata Blanca M",
         "peso": "600 gr.",
         "codigo_barra": "7798426420474",
@@ -828,7 +828,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001100020",
+        "sku": "687001100020",
         "nombre": "Bata Blanca L",
         "peso": "600 gr.",
         "codigo_barra": "7798426420481",
@@ -836,7 +836,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001100030",
+        "sku": "687001100030",
         "nombre": "Bata Blanca XL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420498",
@@ -844,7 +844,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001100040",
+        "sku": "687001100040",
         "nombre": "Bata Blanca XXL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420504",
@@ -852,7 +852,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001721010",
+        "sku": "687001721010",
         "nombre": "Bata Gris M",
         "peso": "600 gr.",
         "codigo_barra": "7798426420559",
@@ -860,7 +860,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001721020",
+        "sku": "687001721020",
         "nombre": "Bata Gris L",
         "peso": "600 gr.",
         "codigo_barra": "7798426420566",
@@ -868,7 +868,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001721030",
+        "sku": "687001721030",
         "nombre": "Bata Gris XL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420573",
@@ -876,7 +876,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001721040",
+        "sku": "687001721040",
         "nombre": "Bata Gris XXL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420580",
@@ -884,7 +884,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001106010",
+        "sku": "687001106010",
         "nombre": "Bata Nature M",
         "peso": "600 gr.",
         "codigo_barra": "7798426420597",
@@ -892,7 +892,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001106020",
+        "sku": "687001106020",
         "nombre": "Bata Nature L",
         "peso": "600 gr.",
         "codigo_barra": "7798426420603",
@@ -900,7 +900,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001106030",
+        "sku": "687001106030",
         "nombre": "Bata Nature XL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420610",
@@ -908,7 +908,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001106040",
+        "sku": "687001106040",
         "nombre": "Bata Nature XXL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420627",
@@ -916,7 +916,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001204010",
+        "sku": "687001204010",
         "nombre": "Bata Rosa M",
         "peso": "600 gr.",
         "codigo_barra": "7798426420511",
@@ -924,7 +924,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001204020",
+        "sku": "687001204020",
         "nombre": "Bata Rosa L",
         "peso": "600 gr.",
         "codigo_barra": "7798426420528",
@@ -932,7 +932,7 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001204030",
+        "sku": "687001204030",
         "nombre": "Bata Rosa XL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420535",
@@ -940,11 +940,59 @@
         "cantidadxPaq": "1"
     },
     {
-        "codigo": "687001204040",
+        "sku": "687001204040",
         "nombre": "Bata Rosa XXL",
         "peso": "600 gr.",
         "codigo_barra": "7798426420542",
         "tipo": "Bata",
         "cantidadxPaq": "1"
+    },
+    {
+        "sku": "123456789123",
+        "nombre": "4565645654sadda",
+        "tipo": "teeeela",
+        "peso": "4545455",
+        "cantidadxPaq": "100",
+        "codigo_barra": "4444444444444"
+    },
+    {
+        "sku": "777777777788",
+        "nombre": "ASD",
+        "tipo": "tipo",
+        "peso": "78",
+        "cantidadxPaq": "7",
+        "codigo_barra": "7777777"
+    },
+    {
+        "sku": "555555555555",
+        "nombre": "wer",
+        "tipo": "rwe",
+        "peso": "31",
+        "cantidadxPaq": "321",
+        "codigo_barra": "77777777"
+    },
+    {
+        "sku": "666666666666",
+        "nombre": "a",
+        "tipo": "a",
+        "peso": "6",
+        "cantidadxPaq": "6",
+        "codigo_barra": "6666666666666"
+    },
+    {
+        "sku": "323132321",
+        "nombre": "qwewwq",
+        "tipo": "qew",
+        "peso": "2",
+        "cantidadxPaq": "2",
+        "codigo_barra": "4444411111111"
+    },
+    {
+        "sku": "333333333333",
+        "nombre": "probar",
+        "tipo": "p",
+        "peso": "3",
+        "cantidadxPaq": "3",
+        "codigo_barra": "3333333333333"
     }
 ]

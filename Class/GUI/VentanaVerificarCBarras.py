@@ -4,20 +4,25 @@ from tkinter import messagebox
 import json
 
 class VentanaVerificarCBarras(Ventana):
-    def __init__(self):
-        super().__init__(title="Verificar Código de Barras")
+    def __init__(self, root, window_manager):
+        super().__init__(root, window_manager,title="Verificar Código de Barras")
         self.crear_widgets()
 
     def crear_widgets(self):
         frame = tk.Frame(self.root)
         frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+        
+        
+        
 
         label = tk.Label(frame, text="Ingrese el código de barras:", font=("Arial", 12))
         label.pack(pady=10)
-
-        self.entry_codigo_barras = tk.Entry(frame, width=50, font=("Arial", 16))
+        vcm_codigo_barras = (self.root.register(lambda texto: self.valida_numero(texto, longitud=13)), '%P')
+        self.entry_codigo_barras = tk.Entry(frame, width=50, font=("Arial", 16), validate="key", validatecommand=vcm_codigo_barras)
         self.entry_codigo_barras.pack(pady=10, ipady=10)
-        self.entry_codigo_barras.bind("<KeyRelease>", self.validar_entrada)
+
+
+
 
         btn_verificar = tk.Button(frame, text="Verificar", command=self.verificar_codigo_barras, width=20, height=3, font=("Arial", 16))
         btn_verificar.pack(pady=10)
@@ -45,30 +50,18 @@ class VentanaVerificarCBarras(Ventana):
         btn_agregar_articulo = tk.Button(btn_frame, text="Agregar Artículo", command=self.agregar_articulo, width=20, height=3, font=("Arial", 16))
         btn_agregar_articulo.pack(side=tk.LEFT, padx=5)
 
-        self.cargar_articulos()
-
-    def validar_entrada(self, event):
-        entrada = self.entry_codigo_barras.get()
-        if not entrada.isdigit():
-            self.entry_codigo_barras.delete(0, tk.END)
-            self.entry_codigo_barras.insert(0, ''.join(filter(str.isdigit, entrada)))
-        if len(entrada) > 13:
-            self.entry_codigo_barras.delete(13, tk.END)
-
-    def cargar_articulos(self):
-        # Cargar los artículos desde el archivo nomina.json
-        with open('nomina.json', 'r') as file:
-            nomina = json.load(file)
+        nomina = self.cargar_datos_nomina()
+    
         
         self.text_articulos.config(state=tk.NORMAL)  # Habilitar edición temporalmente
         self.text_articulos.delete(1.0, tk.END)
         for idx, articulo in enumerate(nomina, start=1):
             self.text_articulos.insert(tk.END, f"Ítem {idx}:\n")
-            self.text_articulos.insert(tk.END, f"Código de Barras: {articulo.get('codigo_barra', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"SKU: {articulo.get('sku', 'N/A')}\n")
             self.text_articulos.insert(tk.END, f"Nombre: {articulo.get('nombre', 'N/A')}\n")
             self.text_articulos.insert(tk.END, f"Tipo: {articulo.get('tipo', 'N/A')}\n")
             self.text_articulos.insert(tk.END, f"Peso: {articulo.get('peso', 'N/A')}\n")
-            self.text_articulos.insert(tk.END, f"SKU: {articulo.get('codigo', 'N/A')}\n")
+            self.text_articulos.insert(tk.END, f"Código de Barras: {articulo.get('codigo_barra', 'N/A')}\n")
             self.text_articulos.insert(tk.END, "-"*40 + "\n")
         self.text_articulos.config(state=tk.DISABLED)  # Volver a solo lectura
 
@@ -79,25 +72,18 @@ class VentanaVerificarCBarras(Ventana):
             return
 
         # Cargar los artículos desde el archivo nomina.json
-        with open('nomina.json', 'r') as file:
-            nomina = json.load(file)
+        nomina = self.cargar_datos_nomina()
 
         # Verificar si el código de barras está cargado
         for idx, item in enumerate(nomina):
             if item['codigo_barra'] == codigo_barras:
-                messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} está cargado en el ítem {idx + 1}: {item['nombre']}")
+                messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} está cargado en el ítem {idx + 1}:\n\n {item['nombre']}")
                 return
 
         messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} no está cargado en la nómina.")
 
     def volver_menu(self):
-        from .VentanaMenuPrincipal import VentanaMenuPrincipal
-        ventana_menu_principal = VentanaMenuPrincipal()
-        self.root.destroy()
-        ventana_menu_principal.mostrar()
+        self.window_manager.show_menu_principal()
 
     def agregar_articulo(self):
-        from .VentanaAgregarArticulo import VentanaAgregarArticulo
-        ventana_agregar_articulo = VentanaAgregarArticulo()
-        self.root.destroy()
-        ventana_agregar_articulo.mostrar()
+        self.window_manager.show_agregar_articulo()
