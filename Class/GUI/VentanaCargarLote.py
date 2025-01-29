@@ -74,11 +74,11 @@ class VentanaCargarLote(Ventana):
         self.text.insert("1.0", formateado.strip())
 
     def validar_codigos_sku(self, nomina):
-        skus = self.text.get("1.0", tk.END).strip().split()
+        codigos_barra = self.text.get("1.0", tk.END).strip().split()
         codigos_nomina = {producto['codigo_barra'] for producto in nomina}
-        for sku in skus:
-            if sku not in codigos_nomina:
-                return False, sku
+        for codigo_barra in codigos_barra:
+            if codigo_barra not in codigos_nomina:
+                return False, codigo_barra
         return True, None
 
     def procesar_datos(self):
@@ -93,7 +93,7 @@ class VentanaCargarLote(Ventana):
 
         valido, sku_invalido = self.validar_codigos_sku(nomina)
         if not valido:
-            messagebox.showerror("Error", f"El código SKU {sku_invalido} no es válido.")
+            messagebox.showerror("Error", f"El código de barra {sku_invalido} no es válido.")
             return
 
         apellido = self.entry_apellido.get().strip()
