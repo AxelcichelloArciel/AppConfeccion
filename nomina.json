@@ -957,26 +957,10 @@
     },
     {
         "sku": "444444444444",
-        "nombre": "44",
-        "peso": "4",
+        "nombre": "EQW",
+        "peso": "21",
         "codigo_barra": "4444444444444",
-        "tipo": "w",
-        "cantidadxPaq": 4
-    },
-    {
-        "sku": "555555555555",
-        "nombre": "5",
-        "peso": "5",
-        "codigo_barra": "5555555555555",
-        "tipo": "r",
-        "cantidadxPaq": 5
-    },
-    {
-        "sku": "321131213211",
-        "nombre": "qweewqqeqqweqeqweqwewqqweqeqw",
-        "peso": "32",
-        "codigo_barra": "2222222222222",
-        "tipo": "ewq",
-        "cantidadxPaq": 232
+        "tipo": "EWQ",
+        "cantidadxPaq": 2
     }
 ]

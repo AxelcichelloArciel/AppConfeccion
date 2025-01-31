@@ -46,6 +46,7 @@ def exportar_a_pdf(numero_lote, productos, apellido):
     
     
     
+    
     # Verificar si el archivo ya existe
     if os.path.exists(pdf_path):
         respuesta = messagebox.askyesno("Archivo existente", f"El archivo {pdf_path} ya existe. ¿Desea sobrescribirlo?")
@@ -53,9 +54,12 @@ def exportar_a_pdf(numero_lote, productos, apellido):
             nuevo_nombre = simpledialog.askstring("Guardar como", "Ingrese el nuevo nombre para el archivo:")
             if nuevo_nombre:
                 pdf_path = os.path.join(folder_path, f"{nuevo_nombre}.pdf")
+                if os.path.exists(pdf_path):
+                    messagebox.showerror("Error", "El archivo ya existe. Por favor, elija un nombre diferente.")
+                    return
             else:
-                messagebox.showinfo("Cancelado", "La exportación ha sido cancelada.")
-                return
+                    messagebox.showinfo("Cancelado", "La exportación ha sido cancelada.")
+                    return
     
     
     doc = SimpleDocTemplate(pdf_path, pagesize=landscape(letter))

@@ -1,7 +1,7 @@
 from .Ventana import Ventana
 from ..Producto import Producto
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, simpledialog
 import json
 
 class VentanaVerificarCBarras(Ventana):
@@ -54,6 +54,19 @@ class VentanaVerificarCBarras(Ventana):
         btn_agregar_articulo = tk.Button(btn_frame, text="Agregar Artículo", command=self.agregar_articulo, width=20, height=3, font=("Arial", 16))
         btn_agregar_articulo.pack(side=tk.LEFT, padx=5)
         
+        btn_eliminar_articulo = tk.Button(
+            btn_frame,
+            text="Eliminar artículo de la nómina",
+            command=self.eliminar_articulo,
+            width=25,
+            height=3,
+            font=("Arial", 16),
+            bg="red",
+            fg="white"
+        )
+        btn_eliminar_articulo.pack(side=tk.LEFT, padx=5)
+
+        
         self.text_articulos.config(state=tk.NORMAL)  # Habilitar edición temporalmente
         self.text_articulos.delete(1.0, tk.END)
         for idx, articulo in enumerate(nomina, start=1):
@@ -74,6 +87,10 @@ class VentanaVerificarCBarras(Ventana):
     def verificar_codigo_barras(self):
         codigo_barras = self.entry_codigo_barras.get().strip()
         Producto.verificar_codigo_barras(codigo_barras)
+        
+    def eliminar_articulo(self):
+        Producto.eliminar_articulo()
+        self.window_manager.show_verificar_cbarras()
         
     def volver_menu(self):
         self.window_manager.show_menu_principal()

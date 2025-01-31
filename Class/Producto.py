@@ -1,6 +1,7 @@
 import json
 from tkinter import messagebox
 from .GUI.Ventana import Ventana
+from tkinter import messagebox, simpledialog
 
 class Producto:
     def __init__(self, sku, nombre, codigo_barra, cantidadxPaq, tipo, peso, cantidad = 0, unidadesTotales = 0):
@@ -62,7 +63,9 @@ class Producto:
         return True
     
 
-    def grabar_nomina(self, nomina):
+    # Metodo que graba la nomina en un archivo json
+    @staticmethod
+    def grabar_nomina(nomina):
         with open('nomina.json', 'w') as file:
             json.dump(nomina, file, indent=4)
     
@@ -85,3 +88,32 @@ class Producto:
                 return
 
         messagebox.showinfo("Resultado", f"El código de barras {codigo_barras} no está cargado en la nómina.")
+        
+        
+    @staticmethod
+    def eliminar_articulo():
+        itemABorrar = simpledialog.askstring("Eliminar artículo", "Ingrese el Codigo de barras que desea eliminar:")
+        nomina = Producto.cargar_datos_nomina()
+        
+        if not itemABorrar:
+            messagebox.showerror("Error", "El campo de código de barras no puede estar vacío.")
+            return
+        
+        respuesta = None
+        for idx, articulo in enumerate(nomina):
+            
+            if articulo['codigo_barra'] == itemABorrar:
+                respuesta = messagebox.askyesno("Eliminar artículo", f"¿Está seguro que desea eliminar el artículo {articulo['nombre']} de la nómina?")
+                if(respuesta):
+                    del nomina[idx]
+                    Producto.grabar_nomina(nomina)
+                    messagebox.showinfo("Éxito", "Artículo eliminado de la nómina.")
+                    return
+                else:
+                    messagebox.showinfo("Cancelado", "La eliminación ha sido cancelada.")
+                    return
+            
+        if not respuesta:
+            messagebox.showerror("Error", "El artículo no se encuentra en la nómina.")
+            return
+        
