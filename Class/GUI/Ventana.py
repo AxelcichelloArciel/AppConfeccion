@@ -40,8 +40,8 @@ class Ventana:
         self.entry_cantxpaq.delete(0, tk.END)
         self.entry_codigo_barras.delete(0, tk.END)
 
-        self.entry_sku.config(validate='key', validatecommand=(self.root.register(self.valida_numero), '%P')) 
-        self.entry_peso.config(validate='key', validatecommand=(self.root.register(self.valida_texto), '%P'))
-        self.entry_codigo_barras.config(validate='key', validatecommand=(self.root.register(self.valida_numero), '%P'))
-        self.entry_cantxpaq.config(validate='key', validatecommand=(self.root.register(self.valida_numero), '%P'))
+        self.entry_sku.config(validate='key', validatecommand=(self.root.register(lambda texto: self.valida_numero(texto, longitud=12)), '%P')) 
+        self.entry_peso.config(validate='key', validatecommand=(self.root.register(lambda texto: self.valida_numero(texto, longitud=7)), '%P'))
+        self.entry_codigo_barras.config(validate='key', validatecommand=(self.root.register(lambda texto: self.valida_numero(texto, longitud=13)), '%P'))
+        self.entry_cantxpaq.config(validate='key', validatecommand=(self.root.register(lambda texto: self.valida_numero(texto, longitud=3)), '%P'))
         self.entry_tipo.config(validate='key', validatecommand=(self.root.register(self.valida_texto), '%P'))

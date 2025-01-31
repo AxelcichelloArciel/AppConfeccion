@@ -954,13 +954,5 @@
         "codigo_barra": "7798426420542",
         "tipo": "Bata",
         "cantidadxPaq": "1"
-    },
-    {
-        "sku": "444444444444",
-        "nombre": "EQW",
-        "peso": "21",
-        "codigo_barra": "4444444444444",
-        "tipo": "EWQ",
-        "cantidadxPaq": 2
     }
 ]

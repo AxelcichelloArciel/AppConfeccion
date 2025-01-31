@@ -69,6 +69,27 @@ class VentanaAgregarArticulo(Ventana):
         cantxpaq = self.entry_cantxpaq.get()
         codigo_barras = self.entry_codigo_barras.get()
         
+        
+        if not sku:
+            messagebox.showerror("Error", "Debe ingresar el numero de SKU.")
+            return
+        
+        if not nombre:
+            messagebox.showerror("Error", "Debe ingresar el nombre del articulo.")
+            return
+        
+        if not tipo:
+            messagebox.showerror("Error", "Debe ingresar el tipo de articulo.")
+            return
+        
+        if not cantxpaq:
+            messagebox.showerror("Error", "Debe ingresar la cantidad por paquete.")
+            return
+        
+        if not codigo_barras:
+            messagebox.showerror("Error", "Debe ingresar el codigo de barras.")
+            return
+        
         producto = Producto(sku, nombre, codigo_barras, cantxpaq, tipo, peso)
         resultado = producto.agregar_a_nomina()
         

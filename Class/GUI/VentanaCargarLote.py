@@ -17,11 +17,11 @@ class VentanaCargarLote(Ventana):
 
 
         # Apellido
-        label_apellido = tk.Label(frame, text="Ingrese su apellido:", font=("Arial", 12))
-        label_apellido.pack(pady=10)
-        vcm_apellido = (self.root.register(self.valida_texto), '%P')
-        self.entry_apellido = tk.Entry(frame, width=50, font=("Arial", 16), validate="key", validatecommand=vcm_apellido)
-        self.entry_apellido.pack(pady=10, ipady=10)
+        label_legajo = tk.Label(frame, text="Ingrese su legajo:", font=("Arial", 12))
+        label_legajo.pack(pady=10)
+        vcm_legajo = (self.root.register(self.valida_numero), '%P')
+        self.entry_legajo = tk.Entry(frame, width=50, font=("Arial", 16), validate="key", validatecommand=vcm_legajo)
+        self.entry_legajo.pack(pady=10, ipady=10)
 
 
         # Lote
@@ -96,9 +96,9 @@ class VentanaCargarLote(Ventana):
             messagebox.showerror("Error", f"El código de barra {sku_invalido} no es válido.")
             return
 
-        apellido = self.entry_apellido.get().strip()
-        if not apellido:
-            messagebox.showerror("Error", "El apellido no puede estar vacío.")
+        legajo = self.entry_legajo.get().strip()
+        if not legajo:
+            messagebox.showerror("Error", "El legajo no puede estar vacío.")
             return
 
         numero_lote = self.entry_lote.get().strip()
@@ -135,7 +135,7 @@ class VentanaCargarLote(Ventana):
 
         
         
-        self.window_manager.show_datos_procesados(numero_lote, productos, apellido)
+        self.window_manager.show_datos_procesados(numero_lote, productos, legajo)
 
     def volver_atras(self):
         self.window_manager.show_menu_principal()
